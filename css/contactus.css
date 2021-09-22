@@ -1,0 +1,359 @@
+#navbar{
+    background-color: #1B3DA2;
+    height: 192px;
+    }
+
+    .navbar-header a img{
+height: 96px; 
+width: 149.33px; 
+    }
+
+    #header-logo {
+        position: absolute;
+        top: 13px;
+        left: 50px;
+    }
+    #myNavbar li a{
+        color: #ffffff; 
+        line-height: 35px;
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+text-align: center;
+}
+    
+.topnav{
+        top: 52px;
+        right: 380px;
+        left: 260px;
+        position: absolute;
+        }
+        
+.topnav .item1{
+    border-right: 1px solid #7798F9;
+    height: 58px;
+}
+.topnav .item2{
+    border-right: 1px solid #7798F9;
+    height: 58px;
+}
+.topnav .item3{
+    border-right: 1px solid #7798F9;
+    height: 58px;
+}
+.topnav .item4{
+    border-right: 1px solid #7798F9;
+    height: 58px;
+}
+.topnav .item5{
+    border-right: 1px solid #7798F9;
+    height: 58px;
+}
+
+#con p{
+    position: absolute;
+    left: 300px;
+    top: 294px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+     color: #000000;
+    
+}
+
+    .one{
+        position: absolute;
+        width: 654px;
+        left: 303px;
+        top: 370px;
+        
+        font-family: Acumin Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 100.5%;
+        color: #000000;
+        }
+
+   #form{
+    width: 500px;
+    height: 650px;
+    background: #FFFFFF;
+    box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
+    border-radius: 17px;
+    padding-left: 20px;
+    margin-left: 190px;
+}
+
+.form-box p{
+    position: absolute;
+left: 500px;
+top: 530px;
+
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 136.5%;
+color: #000000;
+}
+
+#name{
+    position: absolute;
+width: 430px;
+height: 50px;
+left: 310px;
+top: 600px;
+border: 1px solid #7E95A6;
+box-sizing: border-box;
+border-radius: 8px;
+
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 136.5%;
+color: #36404E;
+
+}
+
+#email{
+    position: absolute;
+width: 430px;
+height: 58px;
+left: 310px;
+top: 670px;
+border: 1px solid #7E95A6;
+box-sizing: border-box;
+border-radius: 8px;
+
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 136.5%;
+color: #36404E;
+
+}
+
+#msg{
+    position: absolute;
+width: 430px;
+height: 172px;
+left: 310px;
+top: 750px;
+
+background: #FFFFFF;
+border: 1px solid #7E95A6;
+box-sizing: border-box;
+border-radius: 8px;
+
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 136.5%;
+color: #36404E;
+}
+
+.text{
+    position: absolute;
+width: 214px;
+height: 25px;
+left: 310px;
+top: 950px;
+
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 136.5%;
+color: #36404E;
+}
+.text2{
+    position: absolute;
+width: 245px;
+height: 58px;
+left: 500px;
+top: 950px;
+
+background: #F3F5F7;
+border: 1px solid #B7C4CD;
+box-sizing: border-box;
+border-radius: 8px;
+}
+#submit{
+    position: absolute;
+width: 46px;
+height: 20px;
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+width: 194px;
+height: 51px;
+left: 550px;
+top: 1030px;
+background: #20B9B9;
+border-radius: 7px;
+
+
+}
+
+#form2{
+    position: absolute;
+width: 380px;
+height: 650px;
+left: 800px;
+top: 470px;
+background: #FFFFFF;
+box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
+border-radius: 17px;
+}
+
+#form2 img{
+    position: absolute;
+width: 19.89px;
+height: 19.93px;
+left: 40px;
+top: 100px;
+}
+
+#form2 p{
+    position: absolute;
+width: 10px;
+height: 61px;
+left: 90px;
+top: 90px;
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 176%;
+color: #000000;
+}
+
+#form2 #icon img{
+    position: absolute;
+width: 20px;
+height: 10px;
+left: 40px;
+top: 240px;
+border: 2px solid #000000;
+}
+
+#form2 #text-1{
+    position: absolute;
+width: 114px;
+height: 61px;
+left: 100px;
+top: 230px;
+font-family: Acumin Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 176%;
+color: #000000;
+
+}
+
+#form2 #icon2 img{
+    position: absolute;
+width: 6px;
+height: 6px;
+left: 40px;
+top: 400px;
+}
+
+#form2 #icon3 img{
+    position: absolute;
+width: 18px;
+height: 22px;
+left: 1145px;
+top: 500px;
+
+border: 2px solid #000000;
+
+}
+
+.footer{
+    top: 121px;
+    text-align: center;
+  padding: 3px;
+  background-color: #1E1D45;
+  color: white;
+  height: 316px;
+  position: relative;
+}
+.foot img{
+    position: absolute;
+    top: 80px;
+    width: 129px;
+    height: 83px;
+    left: 150px;
+}
+
+.foot .list{
+    position: absolute;
+left: 29.1%;
+right: 45.41%;
+top: 20.89%;
+bottom: 38.92%;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 133.69%;
+color: #FFFFFF;
+}
+
+.foot .list2{
+position: absolute;
+left: 55.7%;
+right: 40.96%;
+top: 20.89%;
+bottom: 64.24%;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 198.19%;
+color: #FFFFFF;
+}
+.foot .list3
+{
+    position: absolute;
+left: 63.54%;
+right: 27.12%;
+top: 20.89%;
+bottom: 62.66%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 219.69%;
+color: #FFFFFF;
+}
+
+.foot .list4{
+    position: absolute;
+left: 73.49%;
+right: 15.08%;
+top: 22.47%;
+bottom: 71.84%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 130%;
+color: #FFFFFF;
+}
+
