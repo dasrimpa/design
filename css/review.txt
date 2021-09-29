@@ -12,9 +12,11 @@
   - Title font size issue -done
 
 - Footer design issue 
+  - Footer Text alignment to horizontally
 
 
 Mobile: 
 - Banner issue -done
 - Card layout responsive issue-done
 
+- Nav a required 
