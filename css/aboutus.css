@@ -1,5 +1,5 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
             body {
                 margin: 0;
             }
@@ -13,13 +13,6 @@
                 display: flex;
                 background-color: #1B3DA2;
                 align-items: center;
-                justify-content: space-between;
-            }
-            
-            .logo img {
-                padding-left: 30px;
-                padding-top: 10px;
-                padding-bottom: 20px;
             }
             
             .toggle-button {
@@ -28,16 +21,21 @@
             
             .nav ul li {
                 display: inline-block;
-                padding: 0 40px 0 30px;
                 color: #FFFFFF;
                 font-family: 'Roboto', sans-serif;
                 text-decoration: none;
                 width: 120.50px;
+                text-align: center;
             }
             
             @media screen and (max-width: 768px) {
+                .header {
+                    justify-content: space-between;
+                    align-items: center;
+                }
                 .logo img {
                     max-width: 70px;
+                    padding:10px 0px 20px 30px ;
                 }
                 .nav ul li {
                     display: none;
@@ -51,29 +49,55 @@
             }
             
             @media screen and (min-width: 769px) {
+                .header {
+                    justify-content: space-between;
+                }
                 .logo img {
                     max-width: 100px;
                 }
                 .nav ul li {
                     font-size: 15px;
                     width: 80.50px;
+                    padding: 10px 20px 0px 30px;
                 }
             }
             
             @media screen and (min-width: 1025px) {
                 .logo img {
                     max-width: 130px;
+                    padding:10px 0px 20px 30px ;
                 }
                 .nav ul li {
                     font-size: 20px;
-                    width: 80.50px;
+                    width: 90.50px;
+                    padding-right:80px ;
                 }
             }
             
             @media screen and (min-width: 1401px) {
+                .logo img {
+                    max-width: 149.33px;
+                    padding:10px 0px 20px 30px ;
+                }
                 .nav ul li {
                     font-size: 30px;
-                    width: 120.50px;
+                    width: 182.14px;
+                    padding-right: 80px;
+                }
+            }
+            @media screen and (min-width: 1800px) {
+                .header {
+                    min-height:190px ;
+                }
+                .logo img {
+                    max-width: 149.33px;
+                    padding:22px 0px 47px 86px ;
+                }
+                .nav ul li {
+                    font-size: 30px;
+                    width: 182.14px;
+                    padding: 40px 120px 70px 10px;
+                    margin: 0;
                 }
             }
             /*banner section*/
@@ -91,12 +115,14 @@
                 display: inline-flex;
                 font-weight: 900;
                 color: #FFFFFF;
+                margin-bottom: 2px;
             }
             
             .banner-content p {
                 font-family: 'Acumin Pro', sans-serif;
                 font-weight: 500;
                 color: #FFFFFF;
+                margin-top: 0px;
             }
             
             @media screen and (max-width: 768px) {
@@ -109,6 +135,7 @@
                     font-size: 15px;
                     padding-left: 40px;
                     width: 280.50px;
+                    line-height: 20px;
                 }
             }
             
@@ -122,6 +149,7 @@
                     font-size: 20px;
                     padding-left: 120px;
                     width: 400.50px;
+                    line-height: 20px;
                 }
             }
             
@@ -138,6 +166,7 @@
                     font-size: 25px;
                     padding-left: 130px;
                     width: 400.50px;
+                    line-height: 25px;
                 }
             }
             
@@ -154,22 +183,24 @@
                     font-size: 30px;
                     padding-left: 150px;
                     width: 560.50px;
+                    line-height: 30px;
                 }
             }
             
-            @media screen and (min-width: 1900px) {
+            @media screen and (min-width: 1800px) {
                 .banner-image {
-                    height: 900px;
+                    min-height: 974px;
                 }
                 .banner-content h1 {
-                    font-size: 40px;
-                    padding-top: 200px;
-                    padding-left: 300px;
+                    font-size: 60px;
+                    padding-top: 282px;
+                    padding-left: 151px;
                 }
                 .banner-content p {
                     font-size: 30px;
-                    padding-left: 300px;
-                    width: 560.50px;
+                    padding-left: 145px;
+                    width: 564px;
+                    line-height: 40px;
                 }
             }
             /*card section*/
@@ -222,7 +253,7 @@
                 .card-container {
                     display: grid;
                     grid-column-gap: 20px;
-                    grid-template-columns: auto auto auto;
+                    grid-template-columns: 0;
                 }
             }
             

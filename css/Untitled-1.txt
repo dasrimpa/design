@@ -1,0 +1,20 @@
+1920: 
+- nav RIght side alignment issue -done
+- nav separator issue
+- nav bottom padding issue -done
+- Banner content alignment issue, font size issue -done
+- Banner content title bottom gap issue -done
+
+- Learsheep 
+  - Title alignement issue 
+  - Spacing issue between banner and title 
+  - Card size issue 
+  - Title font size issue 
+
+- Footer design issue 
+
+
+Mobile: 
+- Banner issue 
+- Card layout responsive issue
+
