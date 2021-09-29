@@ -6,15 +6,15 @@
 - Banner content title bottom gap issue -done
 
 - Learsheep 
-  - Title alignement issue 
-  - Spacing issue between banner and title 
-  - Card size issue 
-  - Title font size issue 
+  - Title alignement issue -done
+  - Spacing issue between banner and title -done
+  - Card size issue -done
+  - Title font size issue -done
 
 - Footer design issue 
 
 
 Mobile: 
-- Banner issue 
-- Card layout responsive issue
+- Banner issue -done
+- Card layout responsive issue-done
 
