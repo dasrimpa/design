@@ -1,476 +1,473 @@
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-            body {
-                margin: 0;
-            }
-            
-            img {
-                max-width: 100%;
-            }
-            /*header section*/
-            
-            .header {
-                display: flex;
-                background-color: #1B3DA2;
-                align-items: center;
-            }
-            
-            .toggle-button {
-                display: none;
-            }
-            
-            .nav ul li {
-                display: inline-block;
-                border-right: 1px solid #7798F9;
-            }
-            
-            .nav ul li a {
-                color: #FFFFFF;
-                font-family: 'Roboto', sans-serif;
-                text-decoration: none;
-                list-style: none;
-            }
-            
-            .nav ul li a::after {
-                height: 58px;
-            }
-            
-            .nav ul li:last-child {
-                border-right: none;
-            }
-            
-            @media screen and (max-width: 768px) {
-                .header {
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .logo img {
-                    max-width: 70px;
-                    padding: 10px 0px 20px 30px;
-                }
-                .nav ul li {
-                    display: none;
-                }
-                .toggle-button {
-                    display: flex;
-                    font-size: 30px;
-                    color: #FFFFFF;
-                    padding-left: 100px;
-                }
-            }
-            
-            @media screen and (min-width: 769px) {
-                .header {
-                    justify-content: inherit;
-                }
-                .logo img {
-                    max-width: 100px;
-                }
-                .nav ul li {
-                    width: 80.50px;
-                    text-align: center;
-                    padding: 10px 50px;
-                }
-                .nav ul li a {
-                    font-size: 15px;
-                    width: 80.50px;
-                }
-            }
-            
-            @media screen and (min-width: 1025px) {
-                .logo img {
-                    max-width: 130px;
-                    padding: 10px 0px 20px 30px;
-                }
-                .nav ul li {
-                    width: 90.50px;
-                    text-align: center;
-                    padding: 10px 40px;
-                }
-                .nav ul li a {
-                    font-size: 20px;
-                }
-            }
-            
-            @media screen and (min-width: 1401px) {
-                .logo img {
-                    max-width: 149.33px;
-                    padding: 10px 0px 20px 30px;
-                }
-                .nav ul li {
-                    width: 182.14px;
-                    padding: 20px 40px;
-                }
-                .nav ul li a {
-                    font-size: 30px;
-                }
-            }
-            
-            @media screen and (min-width: 1800px) {
-                .header {
-                    min-height: 192px;
-                }
-                .logo img {
-                    min-width: 186px;
-                    min-height: 123px;
-                    padding: 22px 0px 47px 86px;
-                }
-                .nav ul {
-                    padding-left: 131px;
-                    padding-right: 131px;
-                }
-                .nav ul li {
-                    width: 129.93px;
-                    padding: 40px 70px
-                }
-                .nav ul li a {
-                    font-size: 30px;
-                }
-            }
-            /*banner section*/
-            
-            .banner-image {
-                background-image: url("../image/background-image.jpeg");
-                background-position: center;
-                background-size: cover;
-                min-height: 400px;
-                width: 100%;
-            }
-            
-            .banner-content h1 {
-                font-family: 'Montserrat', sans-serif;
-                display: inline-flex;
-                font-weight: 900;
-                color: #FFFFFF;
-                margin-bottom: 2px;
-            }
-            
-            .banner-content p {
-                font-family: 'Acumin Pro', sans-serif;
-                font-weight: 500;
-                color: #FFFFFF;
-                margin-top: 0px;
-            }
-            
-            @media screen and (min-width: 320px) {
-                .banner-content h1 {
-                    font-size: 20px;
-                    padding-top: 70px;
-                    padding-left: 40px;
-                }
-                .banner-content p {
-                    font-size: 15px;
-                    padding-left: 40px;
-                    width: 280.50px;
-                    line-height: 20px;
-                }
-            }
-            
-            @media screen and (min-width: 769px) {
-                .banner-content h1 {
-                    font-size: 25px;
-                    padding-top: 100px;
-                    padding-left: 120px;
-                }
-                .banner-content p {
-                    font-size: 20px;
-                    padding-left: 120px;
-                    width: 400.50px;
-                    line-height: 20px;
-                }
-            }
-            
-            @media screen and (min-width: 1025px) {
-                .banner-image {
-                    height: 600px;
-                }
-                .banner-content h1 {
-                    font-size: 30px;
-                    padding-top: 140px;
-                    padding-left: 130px;
-                }
-                .banner-content p {
-                    font-size: 25px;
-                    padding-left: 130px;
-                    width: 400.50px;
-                    line-height: 25px;
-                }
-            }
-            
-            @media screen and (min-width: 1401px) {
-                .banner-image {
-                    height: 650px;
-                }
-                .banner-content h1 {
-                    font-size: 40px;
-                    padding-top: 200px;
-                    padding-left: 150px;
-                }
-                .banner-content p {
-                    font-size: 30px;
-                    padding-left: 150px;
-                    width: 560.50px;
-                    line-height: 30px;
-                }
-            }
-            
-            @media screen and (min-width: 1800px) {
-                .banner-image {
-                    min-height: 974px;
-                }
-                .banner-content h1 {
-                    font-size: 60px;
-                    padding-top: 282px;
-                    padding-left: 151px;
-                }
-                .banner-content p {
-                    font-size: 30px;
-                    padding-left: 145px;
-                    width: 564px;
-                    line-height: 40px;
-                }
-            }
-            /*card section*/
-            
-            .card-heading h1 {
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-            }
-            
-            .card-container {
-                display: grid;
-                grid-column-gap: 5px;
-                grid-template-columns: auto auto auto;
-                margin-bottom: 28px;
-            }
-            
-            .card-item {
-                background-color: #F4F6F8;
-                border: 1px solid rgba(0, 0, 0, 0.8);
-                box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.26);
-                border-radius: 22px;
-                padding: 20px;
-                border: 4px solid #FFFFFF;
-                box-sizing: border-box;
-                transition: 0.3s;
-            }
-            
-            .card-item h2,
-            h4 {
-                font-family: 'Acumin Pro', sans-serif;
-            }
-            
-            .card-item:hover {
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            }
-            
-            @media screen and (max-width: 768px) {
-                .card-container {
-                    width: 100%;
-                    display: block;
-                }
-                .card-item {
-                    min-width: 250px;
-                    min-width: 150px;
-                    text-align: center;
-                }
-            }
-            
-            @media screen and (min-width: 769px) {
-                .card-heading h1 {
-                    font-size: 30px;
-                }
-                .card-container {
-                    display: grid;
-                    grid-column-gap: 30px;
-                    grid-template-columns: auto auto auto;
-                }
-                .card-item {
-                    text-align: center;
-                }
-            }
-            
-            @media screen and (min-width: 1200px) {
-                .card-heading h1 {
-                    font-size: 40px;
-                }
-                .card-container {
-                    display: grid;
-                    grid-column-gap: 30px;
-                    grid-template-columns: auto auto auto;
-                }
-                .card-item {
-                    min-height: 200px;
-                    text-align: center;
-                }
-            }
-            
-            @media screen and (min-width: 1800px) {
-                .card-heading h1 {
-                    font-size: 60px;
-                    text-align: left;
-                    padding: 117px 0px 0px 401px;
-                }
-                .card-container {
-                    display: grid;
-                    grid-column-gap: 30px;
-                    grid-template-columns: auto auto auto;
-                    min-height: 487px;
-                    min-width: 350px;
-                    padding: 0px 405px 0px 405px;
-                }
-                .card-item h2 {
-                    padding-top: 43px;
-                }
-                /*.card-item h4 {
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+                    body {
+                        margin: 0;
+                    }
+                    
+                    img {
+                        max-width: 100%;
+                    }
+                    /*header section*/
+                    
+                    .header {
+                        display: flex;
+                        background-color: #1B3DA2;
+                        align-items: center;
+                    }
+                    
+                    .toggle-button {
+                        display: none;
+                    }
+                    
+                    .nav ul li {
+                        display: inline-block;
+                    }
+                    
+                    .nav ul li a {
+                        color: #FFFFFF;
+                        font-family: 'Roboto', sans-serif;
+                        text-decoration: none;
+                        list-style: none;
+                    }
+                    
+                    .nav ul li:last-child {
+                        border-right: none;
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .header {
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .logo img {
+                            max-width: 70px;
+                            padding: 10px 0px 20px 30px;
+                        }
+                        .nav ul li {
+                            display: none;
+                        }
+                        .toggle-button {
+                            display: flex;
+                            font-size: 30px;
+                            color: #FFFFFF;
+                            padding-left: 100px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 769px) {
+                        .header {
+                            justify-content: inherit;
+                        }
+                        .logo img {
+                            max-width: 100px;
+                        }
+                        .nav ul li {
+                            width: 80.50px;
+                            text-align: center;
+                            padding: 10px 50px;
+                        }
+                        .nav ul li a {
+                            font-size: 15px;
+                            width: 80.50px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1025px) {
+                        .logo img {
+                            max-width: 130px;
+                            padding: 10px 0px 20px 30px;
+                        }
+                        .nav ul li {
+                            width: 90.50px;
+                            text-align: center;
+                            padding: 10px 40px;
+                        }
+                        .nav ul li a {
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1401px) {
+                        .logo img {
+                            max-width: 149.33px;
+                            padding: 10px 0px 20px 30px;
+                        }
+                        .nav ul li {
+                            width: 182.14px;
+                            padding: 20px 40px;
+                        }
+                        .nav ul li a {
+                            font-size: 30px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1800px) {
+                        .header {
+                            min-height: 192px;
+                        }
+                        .logo img {
+                            min-width: 186px;
+                            min-height: 123px;
+                            padding: 22px 0px 47px 86px;
+                        }
+                        .nav ul {
+                            padding-left: 131px;
+                            padding-right: 131px;
+                        }
+                        .nav ul li {
+                            width: 129.93px;
+                            padding: 40px 70px
+                        }
+                        .nav ul li a {
+                            font-size: 30px;
+                        }
+                    }
+                    /*banner section*/
+                    
+                    .banner-image {
+                        background-image: url("../image/background-image.jpeg");
+                        background-position: center;
+                        background-size: cover;
+                        min-height: 400px;
+                        width: 100%;
+                    }
+                    
+                    .banner-content h1 {
+                        font-family: 'Montserrat', sans-serif;
+                        display: inline-flex;
+                        font-weight: 900;
+                        color: #FFFFFF;
+                        margin-bottom: 2px;
+                    }
+                    
+                    .banner-content p {
+                        font-family: 'Acumin Pro', sans-serif;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        margin-top: 0px;
+                    }
+                    
+                    @media screen and (min-width: 320px) {
+                        .banner-content h1 {
+                            font-size: 20px;
+                            padding-top: 70px;
+                            padding-left: 40px;
+                        }
+                        .banner-content p {
+                            font-size: 15px;
+                            padding-left: 40px;
+                            width: 280.50px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 769px) {
+                        .banner-content h1 {
+                            font-size: 25px;
+                            padding-top: 100px;
+                            padding-left: 120px;
+                        }
+                        .banner-content p {
+                            font-size: 20px;
+                            padding-left: 120px;
+                            width: 400.50px;
+                            line-height: 20px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1025px) {
+                        .banner-image {
+                            height: 600px;
+                        }
+                        .banner-content h1 {
+                            font-size: 30px;
+                            padding-top: 140px;
+                            padding-left: 130px;
+                        }
+                        .banner-content p {
+                            font-size: 25px;
+                            padding-left: 130px;
+                            width: 400.50px;
+                            line-height: 25px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1401px) {
+                        .banner-image {
+                            height: 650px;
+                        }
+                        .banner-content h1 {
+                            font-size: 40px;
+                            padding-top: 200px;
+                            padding-left: 150px;
+                        }
+                        .banner-content p {
+                            font-size: 30px;
+                            padding-left: 150px;
+                            width: 560.50px;
+                            line-height: 30px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1800px) {
+                        .banner-image {
+                            min-height: 974px;
+                        }
+                        .banner-content h1 {
+                            font-size: 60px;
+                            padding-top: 282px;
+                            padding-left: 151px;
+                        }
+                        .banner-content p {
+                            font-size: 30px;
+                            padding-left: 145px;
+                            width: 564px;
+                            line-height: 40px;
+                        }
+                    }
+                    /*card section*/
+                    
+                    .card-heading h1 {
+                        text-align: center;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    
+                    .card-container {
+                        display: grid;
+                        grid-column-gap: 5px;
+                        grid-template-columns: auto auto auto;
+                        margin-bottom: 28px;
+                    }
+                    
+                    .card-item {
+                        background-color: #F4F6F8;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.26);
+                        border-radius: 22px;
+                        padding: 20px;
+                        border: 4px solid #FFFFFF;
+                        box-sizing: border-box;
+                        transition: 0.3s;
+                    }
+                    
+                    .card-item h2,
+                    h4 {
+                        font-family: 'Acumin Pro', sans-serif;
+                    }
+                    
+                    .card-item:hover {
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .card-container {
+                            width: 100%;
+                            display: block;
+                        }
+                        .card-item {
+                            min-width: 250px;
+                            min-width: 150px;
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 769px) {
+                        .card-heading h1 {
+                            font-size: 30px;
+                        }
+                        .card-container {
+                            display: grid;
+                            grid-column-gap: 30px;
+                            grid-template-columns: auto auto auto;
+                        }
+                        .card-item {
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1200px) {
+                        .card-heading h1 {
+                            font-size: 40px;
+                        }
+                        .card-container {
+                            display: grid;
+                            grid-column-gap: 30px;
+                            grid-template-columns: auto auto auto;
+                        }
+                        .card-item {
+                            min-height: 200px;
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1800px) {
+                        .card-heading h1 {
+                            font-size: 60px;
+                            text-align: left;
+                            padding: 117px 0px 0px 401px;
+                        }
+                        .card-container {
+                            display: grid;
+                            grid-column-gap: 30px;
+                            grid-template-columns: auto auto auto;
+                            min-height: 487px;
+                            min-width: 350px;
+                            padding: 0px 405px 0px 405px;
+                        }
+                        .card {
+                            margin-bottom: 121px;
+                        }
+                        .card-item h2 {
+                            padding-top: 43px;
+                        }
+                        /*.card-item h4 {
                     width: 150px;
                 }*/
-            }
-            /*footer section*/
-            
-            .footer-1 {
-                background-color: #1E1D45;
-                display: flex;
-                padding: 20px 0px;
-            }
-            
-            .footer-content ul li {
-                display: inline-block;
-                color: #FFFFFF;
-                font-family: 'Roboto', sans-serif;
-                text-decoration: none;
-                font-size: 13px;
-            }
-            
-            .footer-2 {
-                background-color: #1E1D45;
-                border: 1px solid #FFFFFF;
-            }
-            
-            .footer-2 p {
-                text-align: center;
-                color: #9291B6;
-                font-family: 'Roboto', sans-serif;
-            }
-            
-            @media screen and (min-width: 320px) {
-                .footer-logo {
-                    min-width: 70px;
-                    padding: 20px 100px 0px 100px;
-                }
-                .footer-1 {
-                    display: block;
-                }
-                .footer-content ul li {
-                    color: #FFFFFF;
-                    font-family: 'Roboto', sans-serif;
-                    padding-bottom: 20px;
-                    padding-right: 40px;
-                }
-                .footer-content ul .footer-content-1 {
-                    padding-right: 20px;
-                    width: 280.50px;
-                }
-                .footer-content ul .footer-content-3 {
-                    padding-left: 60px;
-                    width: 120px;
-                }
-                .footer-content ul .footer-content-2 {
-                    padding-left: 60px;
-                }
-                .footer-content ul .footer-content-4 {
-                    padding-left: 60px;
-                }
-                .footer-content ul .footer-icon {
-                    padding-left: 70px;
-                }
-            }
-            
-            @media screen and (min-width: 481px) {
-                .footer-logo {
-                    min-width: 70px;
-                    padding: 20px 140px 20px 140px;
-                }
-                .footer-content ul li {
-                    color: #FFFFFF;
-                    font-family: 'Roboto', sans-serif;
-                    padding-bottom: 20px;
-                }
-                .footer-content ul .footer-content-1 {
-                    padding-left: 60px;
-                    padding-right: 60px;
-                    width: 280.50px;
-                }
-                .footer-content ul .footer-content-3 {
-                    padding-left: 60px;
-                    width: 120px;
-                }
-                .footer-content ul .footer-content-2 {
-                    padding-left: 60px;
-                }
-                .footer-content ul .footer-content-4 {
-                    padding-left: 60px;
-                }
-                .footer-content ul .footer-icon {
-                    padding-left: 70px;
-                }
-            }
-            
-            @media screen and (min-width: 769px) {
-                .footer-1 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: inherit;
-                }
-                .footer-content ul li {
-                    display: inline-flex;
-                    color: #FFFFFF;
-                    font-family: 'Roboto', sans-serif;
-                    text-decoration: none;
-                    width: 140px;
-                }
-                .footer-content .footer-icon li {
-                    padding-left: px;
-                }
-            }
-            
-            @media screen and (min-width: 1025px) {
-                .footer-logo img {
-                    max-width: 110px;
-                }
-                .footer-content ul .footer-content-1 {
-                    width: 357px;
-                }
-                .footer-content ul li {
-                    display: inline-flex;
-                    color: #FFFFFF;
-                    font-family: 'Roboto', sans-serif;
-                    text-decoration: none;
-                    width: 140px;
-                }
-            }
-            
-            @media screen and (min-width: 1820px) {
-                .footer-content {
-                    min-height: 247px;
-                }
-                .footer-logo img {
-                    min-width: 129px;
-                    min-height: 83px;
-                    padding-left: 210px;
-                    padding-top: 10px;
-                }
-                .footer-content ul .footer-content-1 {
-                    width: 357px;
-                    font-size: 13px;
-                    padding-left: 70px;
-                    padding-top: 70px;
-                    line-height: 133.69%;
-                }
-                .footer-content ul .footer-content-2 {
-                    width: 103px;
-                    height: 47px;
-                    line-height: 198.19%;
-                    padding-top: 40px;
-                }
-            }
+                    }
+                    /*footer section*/
+                    
+                    .footer-1 {
+                        background-color: #1E1D45;
+                        display: flex;
+                    }
+                    
+                    .footer-content ul li {
+                        display: inline-block;
+                        color: #FFFFFF;
+                        font-family: 'Roboto', sans-serif;
+                        text-decoration: none;
+                        font-size: 13px;
+                    }
+                    
+                    .footer-2 {
+                        background-color: #1E1D45;
+                        border: 1px solid #FFFFFF;
+                    }
+                    
+                    .footer-2 p {
+                        text-align: center;
+                        color: #9291B6;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    
+                    @media screen and (min-width: 320px) {
+                        .footer-logo {
+                            min-width: 70px;
+                            padding: 20px 100px 0px 100px;
+                        }
+                        .footer-1 {
+                            display: block;
+                        }
+                        .footer-content ul li {
+                            color: #FFFFFF;
+                            font-family: 'Roboto', sans-serif;
+                            padding-bottom: 20px;
+                            padding-right: 40px;
+                        }
+                        .footer-content ul .footer-content-1 {
+                            padding-right: 20px;
+                            width: 280.50px;
+                        }
+                        .footer-content ul .footer-content-3 {
+                            padding-left: 60px;
+                            width: 120px;
+                        }
+                        .footer-content ul .footer-content-2 {
+                            padding-left: 60px;
+                        }
+                        .footer-content ul .footer-content-4 {
+                            padding-left: 60px;
+                        }
+                        .footer-content ul .footer-icon {
+                            padding-left: 70px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 481px) {
+                        .footer-logo {
+                            min-width: 70px;
+                            padding: 20px 140px 20px 140px;
+                        }
+                        .footer-content ul li {
+                            color: #FFFFFF;
+                            font-family: 'Roboto', sans-serif;
+                            padding-bottom: 20px;
+                        }
+                        .footer-content ul .footer-content-1 {
+                            padding-left: 60px;
+                            padding-right: 60px;
+                            width: 280.50px;
+                        }
+                        .footer-content ul .footer-content-3 {
+                            padding-left: 60px;
+                            width: 120px;
+                        }
+                        .footer-content ul .footer-content-2 {
+                            padding-left: 60px;
+                        }
+                        .footer-content ul .footer-content-4 {
+                            padding-left: 60px;
+                        }
+                        .footer-content ul .footer-icon {
+                            padding-left: 70px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 769px) {
+                        .footer-1 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: inherit;
+                        }
+                        .footer-content ul li {
+                            display: inline-flex;
+                            color: #FFFFFF;
+                            font-family: 'Roboto', sans-serif;
+                            text-decoration: none;
+                            width: 140px;
+                        }
+                        .footer-content .footer-icon li {
+                            padding-left: px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1025px) {
+                        .footer-logo img {
+                            max-width: 110px;
+                        }
+                        .footer-content ul .footer-content-1 {
+                            width: 357px;
+                        }
+                        .footer-content ul li {
+                            display: inline-flex;
+                            color: #FFFFFF;
+                            font-family: 'Roboto', sans-serif;
+                            text-decoration: none;
+                            width: 140px;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 1820px) {
+                        .footer-content {
+                            min-height: 247px;
+                        }
+                        .footer-logo img {
+                            min-width: 129px;
+                            min-height: 83px;
+                            padding-left: 210px;
+                            padding-top: 10px;
+                        }
+                        .footer-content ul .footer-content-1 {
+                            width: 357px;
+                            font-size: 13px;
+                            padding-left: 70px;
+                            padding-top: 70px;
+                            line-height: 133.69%;
+                        }
+                        .footer-content ul .footer-content-2 {
+                            width: 103px;
+                            height: 47px;
+                            line-height: 198.19%;
+                            padding-top: 40px;
+                        }
+                    }
