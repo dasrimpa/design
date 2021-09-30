@@ -1,6 +1,5 @@
 1920: 
 - nav RIght side alignment issue -done
-- nav separator issue-done
 - nav bottom padding issue -done
 - Banner content alignment issue, font size issue -done
 - Banner content title bottom gap issue -done
@@ -11,12 +10,16 @@
   - Card size issue -done
   - Title font size issue -done
 
-- Footer design issue 
-  - Footer Text alignment to horizontally
-
-
 Mobile: 
 - Banner issue -done
 - Card layout responsive issue-done
 
+
 - Nav a required -done
+- cart section bottom gap issue 
+- Font issue many places
+- Font face check articles  : https://css-tricks.com/snippets/css/using-font-face/
+- Footer layout is incorrect
+- Footer design issue 
+  - Footer Text alignment to horizontally
+- nav separator issue
