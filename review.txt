@@ -1,6 +1,6 @@
 1920: 
 - nav RIght side alignment issue -done
-- nav separator issue
+- nav separator issue-done
 - nav bottom padding issue -done
 - Banner content alignment issue, font size issue -done
 - Banner content title bottom gap issue -done
@@ -19,4 +19,4 @@ Mobile:
 - Banner issue -done
 - Card layout responsive issue-done
 
-- Nav a required 
+- Nav a required -done
