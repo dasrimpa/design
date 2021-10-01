@@ -17,9 +17,9 @@ Mobile:
 
 - Nav a required -done
 - cart section bottom gap issue -done
-- Font issue many places
+- Font issue many places-done
 - Font face check articles  : https://css-tricks.com/snippets/css/using-font-face/
-- Footer layout is incorrect
+- Footer layout is incorrect-done
 - Footer design issue 
   - Footer Text alignment to horizontally
 - nav separator issue

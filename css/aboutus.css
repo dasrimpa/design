@@ -1,5 +1,19 @@
                     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
                     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+                    @font-face {
+                        font-family: 'Acumin Pro', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        src: url('../font/Acumin-RPro.woff') format('woff');
+                    }
+                    
+                    @font-face {
+                        font-family: 'Acumin Pro', sans-serif;
+                        font-style: normal;
+                        font-weight: bold;
+                        src: url('../font/Acumin-RPro.woff') format('woff');
+                    }
+                    
                     body {
                         margin: 0;
                     }
@@ -28,10 +42,6 @@
                         font-family: 'Roboto', sans-serif;
                         text-decoration: none;
                         list-style: none;
-                    }
-                    
-                    .nav ul li:last-child {
-                        border-right: none;
                     }
                     
                     @media screen and (max-width: 768px) {
@@ -70,6 +80,15 @@
                             font-size: 15px;
                             width: 80.50px;
                         }
+                        ul.seperator li ::after {
+                            content: "";
+                            border-right: 1px solid #7798F9;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                        ul.seperator li:last-child a::after {
+                            border-right: 0;
+                        }
                     }
                     
                     @media screen and (min-width: 1025px) {
@@ -80,10 +99,19 @@
                         .nav ul li {
                             width: 90.50px;
                             text-align: center;
-                            padding: 10px 40px;
                         }
                         .nav ul li a {
                             font-size: 20px;
+                        }
+                        ul.seperator li ::after {
+                            content: "";
+                            border-right: 1px solid #7798F9;
+                            margin-left: 25px;
+                            padding-left: 10px;
+                            padding-top: 20px;
+                        }
+                        ul.seperator li:last-child a::after {
+                            border-right: 0;
                         }
                     }
                     
@@ -98,6 +126,14 @@
                         }
                         .nav ul li a {
                             font-size: 30px;
+                        }
+                        ul.seperator li ::after {
+                            content: "";
+                            border-right: 1px solid #7798F9;
+                            padding: 10px;
+                        }
+                        ul.seperator li:last-child a::after {
+                            border-right: 0;
                         }
                     }
                     
@@ -116,10 +152,17 @@
                         }
                         .nav ul li {
                             width: 129.93px;
-                            padding: 40px 70px
+                            padding: 20px 70px
                         }
                         .nav ul li a {
                             font-size: 30px;
+                        }
+                        ul.seperator li ::after {
+                            content: "";
+                            border-right: 1px solid #7798F9;
+                        }
+                        ul.seperator li:last-child a::after {
+                            border-right: 0;
                         }
                     }
                     /*banner section*/
@@ -230,6 +273,7 @@
                     .card-heading h1 {
                         text-align: center;
                         font-family: 'Montserrat', sans-serif;
+                        font-weight: 900;
                     }
                     
                     .card-container {
@@ -320,9 +364,6 @@
                         .card-item h2 {
                             padding-top: 43px;
                         }
-                        /*.card-item h4 {
-                    width: 150px;
-                }*/
                     }
                     /*footer section*/
                     
@@ -331,23 +372,24 @@
                         display: flex;
                     }
                     
-                    .footer-content ul li {
-                        display: inline-block;
+                    .footer-content {
                         color: #FFFFFF;
                         font-family: 'Roboto', sans-serif;
-                        text-decoration: none;
+                        font-weight: normal;
                         font-size: 13px;
+                        display: inline-flex;
                     }
                     
                     .footer-2 {
                         background-color: #1E1D45;
-                        border: 1px solid #FFFFFF;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
                     }
                     
                     .footer-2 p {
                         text-align: center;
                         color: #9291B6;
                         font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
                     }
                     
                     @media screen and (min-width: 320px) {
@@ -356,30 +398,25 @@
                             padding: 20px 100px 0px 100px;
                         }
                         .footer-1 {
-                            display: block;
-                        }
-                        .footer-content ul li {
-                            color: #FFFFFF;
-                            font-family: 'Roboto', sans-serif;
                             padding-bottom: 20px;
                             padding-right: 40px;
                         }
-                        .footer-content ul .footer-content-1 {
-                            padding-right: 20px;
+                        .footer-content-1 {
+                            text-align: justify;
+                            padding-left: 30px;
                             width: 280.50px;
                         }
-                        .footer-content ul .footer-content-3 {
-                            padding-left: 60px;
-                            width: 120px;
+                        .footer-content-2 {
+                            padding-left: 120px;
                         }
-                        .footer-content ul .footer-content-2 {
-                            padding-left: 60px;
+                        .footer-content-3 {
+                            padding-left: 80px;
                         }
-                        .footer-content ul .footer-content-4 {
-                            padding-left: 60px;
+                        .footer-content-4 {
+                            padding-left: 100px;
                         }
-                        .footer-content ul .footer-icon {
-                            padding-left: 70px;
+                        .footer-content-4 a {
+                            padding-left: 10px;
                         }
                     }
                     
@@ -388,58 +425,50 @@
                             min-width: 70px;
                             padding: 20px 140px 20px 140px;
                         }
-                        .footer-content ul li {
-                            color: #FFFFFF;
-                            font-family: 'Roboto', sans-serif;
+                        .footer-content {
                             padding-bottom: 20px;
                         }
-                        .footer-content ul .footer-content-1 {
+                        .footer-content .footer-content-1 {
                             padding-left: 60px;
                             padding-right: 60px;
                             width: 280.50px;
                         }
-                        .footer-content ul .footer-content-3 {
+                        .footer-content .footer-content-3 {
                             padding-left: 60px;
                             width: 120px;
                         }
-                        .footer-content ul .footer-content-2 {
+                        .footer-content .footer-content-2 {
                             padding-left: 60px;
                         }
-                        .footer-content ul .footer-content-4 {
+                        .footer-content.footer-content-4 {
                             padding-left: 60px;
                         }
-                        .footer-content ul .footer-icon {
+                        .footer-content .footer-icon {
                             padding-left: 70px;
                         }
                     }
                     
                     @media screen and (min-width: 769px) {
                         .footer-1 {
-                            display: flex;
                             align-items: center;
                             justify-content: inherit;
                         }
                         .footer-content ul li {
-                            display: inline-flex;
                             color: #FFFFFF;
                             font-family: 'Roboto', sans-serif;
                             text-decoration: none;
                             width: 140px;
                         }
-                        .footer-content .footer-icon li {
-                            padding-left: px;
-                        }
                     }
                     
                     @media screen and (min-width: 1025px) {
                         .footer-logo img {
-                            max-width: 110px;
+                            min-width: 110px;
                         }
-                        .footer-content ul .footer-content-1 {
+                        .footer-content .footer-content-1 {
                             width: 357px;
                         }
-                        .footer-content ul li {
-                            display: inline-flex;
+                        .footer-content {
                             color: #FFFFFF;
                             font-family: 'Roboto', sans-serif;
                             text-decoration: none;
@@ -448,26 +477,35 @@
                     }
                     
                     @media screen and (min-width: 1820px) {
-                        .footer-content {
+                        .footer-1 {
                             min-height: 247px;
                         }
                         .footer-logo img {
                             min-width: 129px;
                             min-height: 83px;
-                            padding-left: 210px;
-                            padding-top: 10px;
+                            padding: 80px 0px 80px 200px;
                         }
-                        .footer-content ul .footer-content-1 {
+                        .footer-content .footer-content-1 {
                             width: 357px;
                             font-size: 13px;
-                            padding-left: 70px;
-                            padding-top: 70px;
+                            padding: 70px 0px 70px 70px;
                             line-height: 133.69%;
                         }
-                        .footer-content ul .footer-content-2 {
+                        .footer-content .footer-content-2 {
+                            width: 103px;
+                            line-height: 198.19%;
+                            padding: 70px 0px 70px 110px;
+                        }
+                        .footer-content .footer-content-3 {
                             width: 103px;
                             height: 47px;
                             line-height: 198.19%;
-                            padding-top: 40px;
+                            padding: 70px 0px 70px 80px;
+                        }
+                        .footer-content .footer-content-4 {
+                            width: 105px;
+                            height: 18px;
+                            line-height: 130%;
+                            padding: 70px 0px 70px 80px;
                         }
                     }
