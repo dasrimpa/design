@@ -1,170 +1,126 @@
-                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
-                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-                    @font-face {
-                        font-family: 'Acumin Pro', sans-serif;
-                        font-style: normal;
-                        font-weight: 500;
-                        src: url('../font/Acumin-RPro.woff') format('woff');
-                    }
-                    
-                    @font-face {
-                        font-family: 'Acumin Pro', sans-serif;
-                        font-style: normal;
-                        font-weight: bold;
-                        src: url('../font/Acumin-RPro.woff') format('woff');
-                    }
-                    
-                    body {
-                        margin: 0;
-                    }
-                    
-                    img {
-                        max-width: 100%;
-                    }
-                    /*header section*/
-                    
-                    .header {
-                        display: flex;
-                        background-color: #1B3DA2;
-                        align-items: center;
-                    }
-                    
-                    .toggle-button {
-                        display: none;
-                    }
-                    
-                    .nav ul li {
-                        display: inline-block;
-                    }
-                    
-                    .nav ul li a {
-                        color: #FFFFFF;
-                        font-family: 'Roboto', sans-serif;
-                        text-decoration: none;
-                        list-style: none;
-                    }
-                    
-                    @media screen and (max-width: 768px) {
-                        .header {
-                            justify-content: space-between;
-                            align-items: center;
-                        }
-                        .logo img {
-                            max-width: 70px;
-                            padding: 10px 0px 20px 30px;
-                        }
-                        .nav ul li {
-                            display: none;
-                        }
-                        .toggle-button {
-                            display: flex;
-                            font-size: 30px;
-                            color: #FFFFFF;
-                            padding-left: 100px;
-                        }
-                    }
-                    
-                    @media screen and (min-width: 769px) {
-                        .header {
-                            justify-content: inherit;
-                        }
-                        .logo img {
-                            max-width: 100px;
-                        }
-                        .nav ul li {
-                            width: 80.50px;
-                            text-align: center;
-                            padding: 10px 50px;
-                        }
-                        .nav ul li a {
-                            font-size: 15px;
-                            width: 80.50px;
-                        }
-                        ul.seperator li ::after {
-                            content: "";
-                            border-right: 1px solid #7798F9;
-                            padding-left: 20px;
-                            padding-right: 20px;
-                        }
-                        ul.seperator li:last-child a::after {
-                            border-right: 0;
-                        }
-                    }
-                    
-                    @media screen and (min-width: 1025px) {
-                        .logo img {
-                            max-width: 130px;
-                            padding: 10px 0px 20px 30px;
-                        }
-                        .nav ul li {
-                            width: 90.50px;
-                            text-align: center;
-                        }
-                        .nav ul li a {
-                            font-size: 20px;
-                        }
-                        ul.seperator li ::after {
-                            content: "";
-                            border-right: 1px solid #7798F9;
-                            margin-left: 25px;
-                            padding-left: 10px;
-                            padding-top: 20px;
-                        }
-                        ul.seperator li:last-child a::after {
-                            border-right: 0;
-                        }
-                    }
-                    
-                    @media screen and (min-width: 1401px) {
-                        .logo img {
-                            max-width: 149.33px;
-                            padding: 10px 0px 20px 30px;
-                        }
-                        .nav ul li {
-                            width: 182.14px;
-                            padding: 20px 40px;
-                        }
-                        .nav ul li a {
-                            font-size: 30px;
-                        }
-                        ul.seperator li ::after {
-                            content: "";
-                            border-right: 1px solid #7798F9;
-                            padding: 10px;
-                        }
-                        ul.seperator li:last-child a::after {
-                            border-right: 0;
-                        }
-                    }
-                    
-                    @media screen and (min-width: 1800px) {
-                        .header {
-                            min-height: 192px;
-                        }
-                        .logo img {
-                            min-width: 186px;
-                            min-height: 123px;
-                            padding: 22px 0px 47px 86px;
-                        }
-                        .nav ul {
-                            padding-left: 131px;
-                            padding-right: 131px;
-                        }
-                        .nav ul li {
-                            width: 129.93px;
-                            padding: 20px 70px
-                        }
-                        .nav ul li a {
-                            font-size: 30px;
-                        }
-                        ul.seperator li ::after {
-                            content: "";
-                            border-right: 1px solid #7798F9;
-                        }
-                        ul.seperator li:last-child a::after {
-                            border-right: 0;
-                        }
-                    }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@font-face {
+    font-family: 'Acumin Pro', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../font/Acumin-RPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Acumin Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/Acumin-RPro.woff') format('woff');
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+/*header section*/
+
+.header {
+    display: flex;
+    background-color: #1B3DA2;
+    align-items: center;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.nav li:not(:last-child){
+    border-right: 1px solid #FFFFFF;
+}
+.nav li a{
+    padding: 30px 20px;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img {
+        max-width: 70px;
+        padding: 10px 0px 20px 30px;
+    }
+    .nav ul li {
+        display: none;
+    }
+    .toggle-button {
+        display: flex;
+        font-size: 30px;
+        color: #FFFFFF;
+        padding-left: 100px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .header {
+        justify-content: inherit;
+    }
+    .logo img {
+        max-width: 100px;
+        padding: 10px 0px 20px 30px;
+    }
+    
+    .nav ul li a{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .logo img {
+        max-width: 130px;
+        padding: 10px 0px 20px 30px;
+    }
+    .nav ul li a {
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width: 1401px) {
+    .logo img {
+        max-width: 149.33px;
+        padding: 10px 0px 20px 30px;
+    }
+    .nav ul li a {
+        font-size: 30px;
+        padding: 30px 40px;
+    }
+   
+}
+@media screen and (min-width: 1800px) {
+    .header {
+        min-height: 192px;
+    }
+    .logo img {
+        min-width: 186px;
+        min-height: 123px;
+        padding: 22px 0px 47px 86px;
+    }
+    .nav ul {
+        padding-left: 131px;
+    }
+    .nav ul li a {
+        font-size: 30px;
+        padding: 30px 30px
+    }
+    
+}
+
                     /*banner section*/
                     
                     .banner-image {
@@ -369,7 +325,6 @@
                     
                     .footer-1 {
                         background-color: #1E1D45;
-                        display: flex;
                     }
                     
                     .footer-content {
@@ -377,7 +332,6 @@
                         font-family: 'Roboto', sans-serif;
                         font-weight: normal;
                         font-size: 13px;
-                        display: inline-flex;
                     }
                     
                     .footer-2 {
@@ -415,12 +369,12 @@
                         .footer-content-4 {
                             padding-left: 100px;
                         }
-                        .footer-content-4 a {
+                        .footer-content-4 a{
                             padding-left: 10px;
                         }
                     }
                     
-                    @media screen and (min-width: 481px) {
+                    @media screen and (min-width: 482px) {
                         .footer-logo {
                             min-width: 70px;
                             padding: 20px 140px 20px 140px;
@@ -452,6 +406,10 @@
                         .footer-1 {
                             align-items: center;
                             justify-content: inherit;
+                            display: flex;
+                        }
+                        .footer-content{
+                            display: inline-flex;
                         }
                         .footer-content ul li {
                             color: #FFFFFF;
@@ -479,33 +437,36 @@
                     @media screen and (min-width: 1820px) {
                         .footer-1 {
                             min-height: 247px;
+                            display: flex;
                         }
                         .footer-logo img {
                             min-width: 129px;
                             min-height: 83px;
                             padding: 80px 0px 80px 200px;
                         }
-                        .footer-content .footer-content-1 {
+                        .footer-content{
+                            display: inline-flex;
+                        }   
+                        .footer-content .footer-content-1 p {
                             width: 357px;
-                            font-size: 13px;
                             padding: 70px 0px 70px 70px;
                             line-height: 133.69%;
                         }
-                        .footer-content .footer-content-2 {
+                        .footer-content .footer-content-2 p {
                             width: 103px;
                             line-height: 198.19%;
                             padding: 70px 0px 70px 110px;
                         }
-                        .footer-content .footer-content-3 {
+                        .footer-content .footer-content-3 p{
                             width: 103px;
-                            height: 47px;
                             line-height: 198.19%;
                             padding: 70px 0px 70px 80px;
                         }
-                        .footer-content .footer-content-4 {
+                        .footer-content .footer-content-4 p {
                             width: 105px;
-                            height: 18px;
                             line-height: 130%;
-                            padding: 70px 0px 70px 80px;
+                            padding: 70px 0px 0px 80px;
+                            
                         }
+
                     }
