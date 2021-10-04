@@ -22,4 +22,4 @@ Mobile:
 - Footer layout is incorrect-done
 - Footer design issue -done
   - Footer Text alignment to horizontally-done
-- nav separator issue-
+- nav separator issue-done
