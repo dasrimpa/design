@@ -35,6 +35,27 @@
         
         .nav ul li {
             display: inline-block;
+            padding: 0px 40px;
+        }
+        
+        .nav ul .nav-content-1 {
+            width: 182.14px;
+        }
+        
+        .nav ul .nav-content-2 {
+            width: 184.74px;
+        }
+        
+        .nav ul .nav-content-3 {
+            width: 148.2px;
+        }
+        
+        .nav ul .nav-content-4 {
+            width: 129.93px;
+        }
+        
+        .nav ul .nav-content-5 {
+            width: 176.62px;
         }
         
         .nav ul li a {
@@ -49,7 +70,7 @@
         }
         
         .nav li a {
-            padding: 30px 20px;
+            padding: 30px 40px;
         }
         
         @media screen and (max-width: 768px) {
@@ -117,6 +138,7 @@
             }
             .nav ul {
                 padding-left: 131px;
+                line-height: 35px;
             }
             .nav ul li a {
                 font-size: 30px;
@@ -350,21 +372,20 @@
         
         @media screen and (min-width: 100px) {
             .footer-logo {
-                min-width: 70px;
+                min-width: 50px;
                 padding: 20px 100px 0px 100px;
             }
             .footer-1 {
-                padding-bottom: 20px;
-                padding-right: 40px;
                 display: block;
             }
             .footer-content-1 {
                 text-align: justify;
-                padding-left: 30px;
-                width: 280.50px;
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 250.50px;
             }
             .footer-content-2 {
-                padding-left: 120px;
+                padding-left: 100px;
             }
             .footer-content-3 {
                 padding-left: 80px;
@@ -409,25 +430,25 @@
         @media screen and (min-width: 482px) {
             .footer-logo {
                 min-width: 70px;
-                padding: 20px 140px 20px 140px;
-            }
-            .footer-content {
-                padding-bottom: 20px;
+                padding: 20px 170px 20px 170px;
             }
             .footer-content .footer-content-1 {
-                padding-left: 60px;
-                padding-right: 60px;
+                padding-left: 100px;
+                padding-right: 100px;
                 width: 280.50px;
             }
+            .footer-content .footer-content-2 {
+                padding-left: 130px;
+                padding-left: 130px;
+            }
             .footer-content .footer-content-3 {
-                padding-left: 60px;
+                padding-left: 130px;
+                padding-left: 130px;
                 width: 120px;
             }
-            .footer-content .footer-content-2 {
-                padding-left: 60px;
-            }
-            .footer-content.footer-content-4 {
-                padding-left: 60px;
+            .footer-content .footer-content-4 {
+                padding-left: 130px;
+                padding-left: 130px;
             }
             .footer-content .footer-icon {
                 padding-left: 70px;
@@ -442,7 +463,7 @@
             }
             .footer-logo {
                 min-width: 90px;
-                padding: 20px 30px 20px 30px;
+                padding: 20px 30px 20px 20px;
             }
             .footer-content {
                 display: inline-flex;
@@ -450,12 +471,14 @@
             }
             .footer-content .footer-content-1 {
                 width: 280.50px;
+                padding-left: 30px;
+                padding-right: 0px;
             }
             .footer-content .footer-content-2 {
-                padding-left: 10px;
+                padding-left: 30px;
             }
             .footer-content .footer-content-3 {
-                padding-left: 10px;
+                padding-left: 20px;
             }
             .footer-content .footer-content-4 {
                 padding-left: 10px;
@@ -539,30 +562,32 @@
             .footer-logo img {
                 min-width: 129px;
                 min-height: 83px;
-                padding: 80px 0px 80px 170px;
+                padding: 80px 0px 84px 272px;
             }
             .footer-content {
                 display: inline-flex;
-                margin: 0px 50px;
             }
             .footer-content .footer-content-1 p {
                 width: 357px;
-                padding: 70px 0px 70px 50px;
+                padding: 66px 0px 54px 30px;
                 line-height: 133.69%;
             }
             .footer-content .footer-content-2 p {
                 width: 103px;
                 line-height: 198.19%;
-                padding: 70px 0px 70px 100px;
+                padding: 66px 0px 54px 180px;
             }
             .footer-content .footer-content-3 p {
                 width: 103px;
                 line-height: 198.19%;
-                padding: 70px 0px 70px 20px;
+                padding: 66px 0px 54px 30px;
             }
             .footer-content .footer-content-4 p {
                 width: 105px;
                 line-height: 130%;
-                padding: 70px 0px 0px 10px;
+                padding: 70px 0px 0px 50px;
+            }
+            .footer-content .footer-content-4 .icon {
+                margin-left: 45px;
             }
         }

@@ -20,6 +20,6 @@ Mobile:
 - Font issue many places-done
 - Font face check articles  : https://css-tricks.com/snippets/css/using-font-face/
 - Footer layout is incorrect-done
-- Footer design issue 
-  - Footer Text alignment to horizontally
-- nav separator issue-done
+- Footer design issue -done
+  - Footer Text alignment to horizontally-done
+- nav separator issue-
