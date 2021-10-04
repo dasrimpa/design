@@ -35,27 +35,6 @@
         
         .nav ul li {
             display: inline-block;
-            padding: 0px 40px;
-        }
-        
-        .nav ul .nav-content-1 {
-            width: 182.14px;
-        }
-        
-        .nav ul .nav-content-2 {
-            width: 184.74px;
-        }
-        
-        .nav ul .nav-content-3 {
-            width: 148.2px;
-        }
-        
-        .nav ul .nav-content-4 {
-            width: 129.93px;
-        }
-        
-        .nav ul .nav-content-5 {
-            width: 176.62px;
         }
         
         .nav ul li a {
@@ -67,10 +46,6 @@
         
         .nav li:not(:last-child) {
             border-right: 1px solid #FFFFFF;
-        }
-        
-        .nav li a {
-            padding: 30px 40px;
         }
         
         @media screen and (max-width: 768px) {
@@ -104,6 +79,9 @@
             .nav ul li a {
                 font-size: 15px;
             }
+            .nav ul li {
+                padding: 0px 20px;
+            }
         }
         
         @media screen and (min-width: 1025px) {
@@ -123,7 +101,9 @@
             }
             .nav ul li a {
                 font-size: 30px;
-                padding: 30px 40px;
+            }
+            .nav ul li {
+                padding: 0px 20px;
             }
         }
         
@@ -140,9 +120,27 @@
                 padding-left: 131px;
                 line-height: 35px;
             }
+            .nav ul li {
+                padding: 0px 40px;
+                text-align: center;
+            }
             .nav ul li a {
                 font-size: 30px;
-                padding: 30px 30px
+            }
+            .nav ul .nav-content-1 {
+                max-width: 182.14px;
+            }
+            .nav ul .nav-content-2 {
+                max-width: 184.74px;
+            }
+            .nav ul .nav-content-3 {
+                max-width: 148.2px;
+            }
+            .nav ul .nav-content-4 {
+                max-width: 129.93px;
+            }
+            .nav ul .nav-content-5 {
+                max-width: 176.62px;
             }
         }
         /*banner section*/
@@ -588,6 +586,6 @@
                 padding: 70px 0px 0px 50px;
             }
             .footer-content .footer-content-4 .icon {
-                margin-left: 45px;
+                margin-left: 35px;
             }
         }
