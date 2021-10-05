@@ -23,3 +23,27 @@ Mobile:
 - Footer design issue -done
   - Footer Text alignment to horizontally-done
 - nav separator issue-done
+
+
+10/05/21
+- Nav hover issue missing
+- footer design issue in mobile 
+- H1 should only one in page
+- Meaningful class name is required. Follow BEM syntax rule https://css-tricks.com/bem-101/
+
+Examples:
+
+.nav - block
+.nav__el - element
+.nav__link - element
+.nav__link__active
+
+.footer - block
+.footer__social_links
+.footer__content 
+.footer__links
+.footer__logo 
+
+b - block
+e - element
+m - modifier
