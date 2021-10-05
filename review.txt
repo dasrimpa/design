@@ -26,10 +26,10 @@ Mobile:
 
 
 10/05/21
-- Nav hover issue missing
-- footer design issue in mobile 
-- H1 should only one in page
-- Meaningful class name is required. Follow BEM syntax rule https://css-tricks.com/bem-101/
+- Nav hover issue missing-done
+- footer design issue in mobile -done
+- H1 should only one in page-done
+- Meaningful class name is required. Follow BEM syntax rule https://css-tricks.com/bem-101/-done
 
 Examples:
 

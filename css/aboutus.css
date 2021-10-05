@@ -39,12 +39,16 @@
         border-right: 1px solid #7798F9;
     }
     
+    .nav a:hover {
+        opacity: 0.5;
+    }
+    
     @media screen and (max-width: 768px) {
         .header {
             justify-content: space-between;
             align-items: center;
         }
-        .logo img {
+        .header-logo img {
             max-width: 70px;
             padding: 10px 0px 20px 30px;
         }
@@ -63,7 +67,7 @@
         .header {
             justify-content: inherit;
         }
-        .logo img {
+        .header-logo img {
             max-width: 100px;
             padding: 10px 0px 20px 30px;
         }
@@ -76,9 +80,8 @@
     }
     
     @media screen and (min-width: 1025px) {
-        .logo img {
+        .header-logo img {
             max-width: 130px;
-            padding: 10px 0px 20px 30px;
         }
         .nav ul li a {
             font-size: 20px;
@@ -86,9 +89,8 @@
     }
     
     @media screen and (min-width: 1401px) {
-        .logo img {
+        .header-logo img {
             max-width: 149.33px;
-            padding: 10px 0px 20px 30px;
         }
         .nav ul li a {
             font-size: 30px;
@@ -102,7 +104,7 @@
         .header {
             min-height: 192px;
         }
-        .logo img {
+        .header-logo img {
             min-width: 186px;
             min-height: 123px;
             padding: 22px 0px 47px 86px;
@@ -118,19 +120,16 @@
         .nav ul li a {
             font-size: 30px;
         }
-        .nav ul .nav-content-1 {
+        .nav__element {
             max-width: 182.14px;
         }
-        .nav ul .nav-content-2 {
-            max-width: 184.74px;
-        }
-        .nav ul .nav-content-3 {
+        .nav__link {
             max-width: 148.2px;
         }
-        .nav ul .nav-content-4 {
+        .nav__element__link {
             max-width: 129.93px;
         }
-        .nav ul .nav-content-5 {
+        .nav__element__link {
             max-width: 176.62px;
         }
     }
@@ -239,7 +238,7 @@
     }
     /*card section*/
     
-    .card-heading h1 {
+    .card-heading {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
@@ -286,7 +285,7 @@
     }
     
     @media screen and (min-width: 769px) {
-        .card-heading h1 {
+        .card-heading {
             font-size: 30px;
         }
         .card-container {
@@ -300,30 +299,21 @@
     }
     
     @media screen and (min-width: 1200px) {
-        .card-heading h1 {
+        .card-heading {
             font-size: 40px;
-        }
-        .card-container {
-            display: grid;
-            grid-column-gap: 30px;
-            grid-template-columns: auto auto auto;
         }
         .card-item {
             min-height: 200px;
-            text-align: center;
         }
     }
     
     @media screen and (min-width: 1800px) {
-        .card-heading h1 {
+        .card-heading {
             font-size: 60px;
             text-align: left;
             padding: 117px 0px 0px 401px;
         }
         .card-container {
-            display: grid;
-            grid-column-gap: 30px;
-            grid-template-columns: auto auto auto;
             min-height: 487px;
             min-width: 350px;
             padding: 0px 405px 0px 405px;
@@ -341,11 +331,32 @@
         background-color: #1E1D45;
     }
     
-    .footer-content {
+    .footer-content p {
         color: #FFFFFF;
         font-family: 'Roboto', sans-serif;
         font-weight: normal;
         font-size: 13px;
+        transition: 0.7s;
+    }
+    
+    .footer-content a {
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    
+    .footer__link p:hover {
+        opacity: 0.5;
+    }
+    
+    .footer__links p:hover {
+        opacity: 0.5;
+    }
+    
+    .footer-icon :hover {
+        opacity: 0.2;
     }
     
     .footer-2 {
@@ -362,86 +373,44 @@
     
     @media screen and (min-width: 250px) {
         .footer-logo {
-            min-width: 50px;
-            padding: 20px 100px 0px 100px;
+            min-width: 70px;
+            padding: 20px 0px 20px 70px;
         }
         .footer-1 {
+            padding-bottom: 20px;
             display: block;
         }
-        .footer-content-1 {
+        .footer-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .footer__element {
+            width: 220.50px;
             text-align: justify;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 250.50px;
-        }
-        .footer-content-2 {
-            padding-left: 100px;
-        }
-        .footer-content-3 {
-            padding-left: 80px;
-        }
-        .footer-content-4 {
-            padding-left: 100px;
-        }
-        .footer-content-4 a {
-            padding-left: 10px;
         }
     }
     
     @media screen and (min-width: 320px) {
         .footer-logo {
             min-width: 70px;
-            padding: 20px 100px 0px 100px;
+            padding: 20px 0px 20px 100px;
         }
-        .footer-1 {
-            padding-bottom: 20px;
-            padding-right: 40px;
-            display: block;
-        }
-        .footer-content-1 {
-            text-align: justify;
+        .footer-content {
             padding-left: 30px;
+            padding-right: 30px;
+        }
+        .footer__element {
             width: 280.50px;
-        }
-        .footer-content-2 {
-            padding-left: 120px;
-        }
-        .footer-content-3 {
-            padding-left: 80px;
-        }
-        .footer-content-4 {
-            padding-left: 100px;
-        }
-        .footer-content-4 a {
-            padding-left: 10px;
         }
     }
     
     @media screen and (min-width: 482px) {
         .footer-logo {
-            min-width: 70px;
             padding: 20px 170px 20px 170px;
         }
-        .footer-content .footer-content-1 {
-            padding-left: 100px;
-            padding-right: 100px;
-            width: 280.50px;
-        }
-        .footer-content .footer-content-2 {
-            padding-left: 130px;
-            padding-left: 130px;
-        }
-        .footer-content .footer-content-3 {
-            padding-left: 130px;
-            padding-left: 130px;
-            width: 120px;
-        }
-        .footer-content .footer-content-4 {
-            padding-left: 130px;
-            padding-left: 130px;
-        }
-        .footer-content .footer-icon {
+        .footer-content {
             padding-left: 70px;
+            padding-right: 70px;
         }
     }
     
@@ -459,18 +428,18 @@
             display: inline-flex;
             padding: 20px 0px;
         }
-        .footer-content .footer-content-1 {
+        .footer__element {
             width: 280.50px;
             padding-left: 30px;
             padding-right: 0px;
         }
-        .footer-content .footer-content-2 {
+        .footer__link {
             padding-left: 30px;
         }
-        .footer-content .footer-content-3 {
+        .footer__links {
             padding-left: 20px;
         }
-        .footer-content .footer-content-4 {
+        .footer__social_link {
             padding-left: 10px;
         }
     }
@@ -483,66 +452,52 @@
         .footer-content {
             padding: 30px 0px;
         }
-        .footer-content .footer-content-1 {
-            width: 280.50px;
+        .footer__element {
             padding-left: 20px;
         }
-        .footer-content .footer-content-2 {
+        .footer__link {
             padding-left: 20px;
         }
-        .footer-content .footer-content-3 {
+        .footer__links {
             padding-left: 40px;
         }
-        .footer-content .footer-content-4 {
+        .footer__social_link {
             padding-left: 40px;
         }
     }
     
     @media screen and (min-width: 1200px) {
-        .footer-logo img {
-            min-width: 110px;
-            padding: 20px 30px 20px 30px;
-        }
-        .footer-content {
-            padding: 30px 0px;
-        }
-        .footer-content .footer-content-1 {
-            width: 280.50px;
+        .footer__element {
             padding-left: 100px;
         }
-        .footer-content .footer-content-2 {
+        .footer__link {
             padding-left: 50px;
         }
-        .footer-content .footer-content-3 {
+        .footer__links {
             padding-left: 50px;
         }
-        .footer-content .footer-content-4 {
+        .footer__social_link {
             padding-left: 50px;
         }
     }
     
     @media screen and (min-width: 1400px) {
         .footer-logo img {
-            min-width: 110px;
             padding: 80px 0px 84px 200px;
         }
-        .footer-content {
-            padding: 30px 0px;
-        }
-        .footer-content .footer-content-1 {
-            width: 280.50px;
+        .footer__element {
             padding-left: 120px;
         }
-        .footer-content .footer-content-2 {
+        .footer__link {
             padding-left: 80px;
         }
-        .footer-content .footer-content-3 {
+        .footer__links {
             padding-left: 80px;
         }
-        .footer-content .footer-content-4 {
+        .footer__social_link {
             padding-left: 80px;
         }
-        .footer-content .footer-content-4 img {
+        .footer__social_link img {
             padding-top: 20px;
         }
     }
@@ -550,40 +505,40 @@
     @media screen and (min-width: 1820px) {
         .footer-1 {
             min-height: 247px;
-            display: flex;
         }
         .footer-logo img {
             min-width: 129px;
             min-height: 83px;
             padding: 80px 0px 84px 272px;
         }
-        .footer-content {
-            display: inline-flex;
-        }
-        .footer-content .footer-content-1 p {
-            width: 320px;
+        .footer__element p {
+            width: 357px;
             padding: 66px 0px 54px 30px;
             line-height: 17.38px;
+            text-align: initial;
         }
-        .footer-content .footer-content-2 p {
+        .footer__link p {
             width: 103px;
             line-height: 25.76px;
             padding: 66px 0px 54px 140px;
         }
-        .footer-content .footer-content-3 p {
+        .footer__links p {
             width: 103px;
             line-height: 28.56px;
             padding: 66px 0px 54px 30px;
         }
-        .footer-content .footer-content-4 p {
+        .footer__social_link p {
             width: 105px;
             line-height: 18.2px;
             padding: 70px 0px 0px 50px;
         }
-        .footer-content .footer-content-4 .icon {
+        .footer__social_link .icon {
             margin-left: 35px;
         }
-        .footer-content .footer-content-4 img {
+        .footer__social_link img {
             padding-top: 20px;
+        }
+        .footer__social_link a {
+            padding-right: 10px;
         }
     }
