@@ -11,7 +11,7 @@
 <body>
     <!--header section-->
     <header class="header">
-        <div class="logo">
+        <div class="header-logo">
             <a href="aboutus.html">
                 <img src="image/Logo.png" alt="Logo">
             </a>
@@ -19,63 +19,96 @@
         <div class="toggle-button"><button>toggle-menu</button></div>
         <div class="nav">
             <ul>
-                <li>Revenue Acceleration</li>
-                <li>Auto- Adjudication
+                <li class="nav__element"><a href="#">Revenue Acceleration</a></li>
+                <li class="nav__element"><a href="#">Auto- Adjudication</a>
                 </li>
-                <li>Entity Resolution</li>
-                <li>Payment Integrity</li>
-                <li>HealthSigma Academy</li>
+                <li class="nav__link"><a href="#">Entity Resolution</a></li>
+                <li class="nav__element__link"><a href="#">Payment Integrity</a></li>
+                <li class="nav__element__link"><a href="#">HealthSigma Academy</a></li>
             </ul>
         </div>
     </header>
+
     <!--form section-->
     <div class="form-heading">
-        <h1>Contact Us</h1>
-        <h4>Get in touch to know more on how our solutions can transform your operations...</h4>
+        <h1>Contact us</h1>
+        <p>Get in touch to know more on how our solutions can transform your operations...</p>
     </div>
 
-    <div class="row">
-        <div class="column">
-            <div class="form-box">
-                <p>Fields marked with an * are required</p>
-                <form action="#">
-                    <input type="text" id="name" value="Name*">
-                    <div class="text3"></div><br>
-                    <input type="email" id="email" value="Email*"><br>
-                    <input type="text" id="msg" value="Message*"><br>
-                    <div class="text">What is thirteen minus 6? *</div>
-                    <input type="text" class="text2"> <br>
-                    <input type="submit" id="submit" value="Send">
-                </form>
+    <div class="form-container">
+        <div class="left__form-box">
+            <p>Fields marked with an * are required</p>
+            <form action="#">
+                <div class="left__form-box--name">
+                    <img src="image/user.png">
+                    <input type="text" value="Name*">
+                </div>
+                <div class="left__form-box--email">
+                    <img src="image/mail.png">
+                    <input type="email" value="Email*">
+                </div>
+                <div class="left__form-box--chat">
+                    <img src="image/chat.png">
+                    <input type="text" value="Message*">
+                </div>
+            </form>
+        </div>
+        <div class="right__form-box">
+            <div class="right__form-box--call">
+                <img src="image/call.png">
+                <h2>Email</h2>
+                <h4>
+                    info@healthsigmainc.com</h4>
+            </div>
+            <div class="right__form-box--email">
+                <img src="image/email.png">
+                <h2 class="email">Phone</h2>
+                <h4 class="email">
+                    973-768-4316</h4>
+            </div>
+            <div class="right__form-box--location">
+                <img src="image/location.png">
+                <h2>Phone</h2>
+                <h4>
+                    973-768-4316</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer section-->
+    <footer class="footer-1">
+        <div class="footer-logo">
+            <a href="aboutus.html">
+                <img src="image/logo2.png" alt="Logo">
+            </a>
+        </div>
+        <div class="footer-content">
+            <div class="footer__element">
+                <p>
+                    Our vision is to make healthcare more efficient by applying latest mathematical algorithms and AI. Our primary focus is on improving financial health of hospitals, provider groups and other providers by increasing payment accuracy and reducing costs.
+                    As hospital revenues increase, more can be spent on patient care and health outcomes.</p>
+            </div>
+            <div class="footer__link">
+                <p><a href="#">Blog <br>Calculator</a></p>
+            </div>
+            <div class="footer__links">
+                <p><a href="#">Term of service Privacy Policy</a></p>
+            </div>
+            <div class="footer__social_link">
+                <p>Socialise with us</p>
+                <a href="#" class="icon footer-icon"><img src="image/icon-1.png"></a>
+                <a href="#" class="footer-icon"><img src="image/icon-2.png"></a>
+                <a href="#" class="footer-icon"><img src="image/icon-3.png"></a>
+                <a href="#" class="footer-icon"><img src="image/icon-4.png"></a>
+                <a href="#" class="footer-icon"><img src="image/icon-5.png"></a>
             </div>
         </div>
-    </div>
-    <div class="form-box" id="form2">
-        <img src="image/icon-1.png">
-        <p>Email info@healthsigmainc.com
-        </p>
-        <div class="icon" id="icon">
-            <img src="image/icon-2.png">
-        </div>
-        <p>
-            <div class="text-1" id="text-1">Phone 973-768-4316
-            </div>
-        </p>
 
-        <div class="icon2" id="icon2">
-            <img src="image/icon-3.png">
-        </div>
-        <div class="icon3">
-            <img src="image/icon-4.png">
-        </div>
-    </div>
-    <p>
-        <div class="text-2" id="text-2">Address 3621 San Paula Dr, Flower Mound, TX 75022</div>
-    </p>
-    </div>
-
-    </form>
-    </div>
+    </footer>
+    <footer class="footer-2">
+        <p>Copyright © 2020 HealthSigma</p>
+    </footer>
 
 </body>
 
