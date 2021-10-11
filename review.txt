@@ -49,11 +49,11 @@ e - element
 m - modifier
 
 10-07-21
-- Footer links ul > li 
-- Heading font size issue-done
+- Footer links ul > li -done
+- Heading font size issue -done
 - card element need padding in mobile -done
-- Footer links need to add space between two element
-- Toggle menu icon 
+- Footer links need to add space between two element -done
+- Toggle menu icon -done
 - jQuery toggle menu 
 
 
