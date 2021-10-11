@@ -492,6 +492,12 @@
             width: 220.50px;
             text-align: justify;
         }
+        .footer__link li {
+            margin-left: -40px;
+        }
+        .footer__links li {
+            margin-left: -40px;
+        }
         .footer__social_link a {
             padding-left: 10px;
         }
