@@ -13,6 +13,7 @@
         max-width: 100%;
     }
     /*header section*/
+    
     .header {
         display: flex;
         background-color: #1B3DA2;
@@ -340,9 +341,6 @@
     }
     
     .card-container {
-        display: grid;
-        grid-column-gap: 5px;
-        grid-template-columns: auto auto auto;
         margin-bottom: 28px;
     }
     
@@ -358,7 +356,7 @@
     }
     
     .card-item h2,
-    h4 {
+    .card-item h4 {
         font-family: 'Acumin Pro', sans-serif;
         font-weight: bold;
     }
@@ -369,9 +367,8 @@
     
     @media screen and (max-width: 768px) {
         .card-container {
-            width: 90%;
-            display: block;
-            padding: 0px 5px 0px 15px;
+            width: 100%;
+            padding: 0px 15px 0px 15px;
         }
         .card-item {
             min-width: 250px;
