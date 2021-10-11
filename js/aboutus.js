@@ -1,9 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("links");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        javascript: void(0);
-        x.style.display = "block ";
-    }
-}
+jQuery(document).ready(function() {
+    var navToggle = jQuery('#nav_toggle');
+    var nav = jQuery('.nav');
+    
+    navToggle.on('click', function() {
+      nav.slideToggle();
+    });
+})

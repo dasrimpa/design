@@ -13,11 +13,11 @@
         max-width: 100%;
     }
     /*header section*/
-    
     .header {
         display: flex;
         background-color: #1B3DA2;
         align-items: center;
+        position: relative;
     }
     
     .toggle-button {
@@ -76,6 +76,14 @@
     }
     
     @media screen and (max-width: 768px) {
+        .nav {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            background: #1B3DA2;
+            border-top: 1px solid #ddd;
+            display: none;
+        }
         .header {
             justify-content: space-between;
             align-items: center;
@@ -83,9 +91,6 @@
         .header-logo img {
             max-width: 70px;
             padding: 10px 0px 20px 30px;
-        }
-        .nav ul li {
-            display: none;
         }
         .toggle-button {
             display: flex;
