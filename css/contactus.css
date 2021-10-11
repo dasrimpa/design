@@ -1,803 +1,921 @@
-                        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
-                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-                        @font-face {
-                            font-family: 'Acumin Pro', sans-serif;
-                            src: url('../font/Acumin-RPro.woff') format('woff');
-                        }
-                        
-                        body {
-                            margin: 0;
-                            background-color: #E5E5E5;
-                        }
-                        
-                        img {
-                            max-width: 100%;
-                        }
-                        /*header section*/
-                        
-                        .header {
-                            display: flex;
-                            background-color: #1B3DA2;
-                            align-items: center;
-                        }
-                        
-                        .toggle-button {
-                            display: none;
-                        }
-                        
-                        .nav ul li {
-                            display: inline-block;
-                        }
-                        
-                        .nav ul li a {
-                            color: #FFFFFF;
-                            font-family: 'Roboto', sans-serif;
-                            text-decoration: none;
-                            list-style: none;
-                        }
-                        
-                        .nav li:not(:last-child) {
-                            border-right: 1px solid #7798F9;
-                        }
-                        
-                        .nav a:hover {
-                            opacity: 0.5;
-                        }
-                        
-                        @media screen and (max-width: 768px) {
-                            .header {
-                                justify-content: space-between;
-                                align-items: center;
-                            }
-                            .header-logo img {
-                                max-width: 70px;
-                                padding: 10px 0px 20px 30px;
-                            }
-                            .nav ul li {
-                                display: none;
-                            }
-                            .toggle-button {
-                                display: flex;
-                                font-size: 30px;
-                                color: #FFFFFF;
-                                padding-left: 100px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 769px) {
-                            .header {
-                                justify-content: inherit;
-                            }
-                            .header-logo img {
-                                max-width: 100px;
-                                padding: 10px 0px 20px 30px;
-                            }
-                            .nav ul li a {
-                                font-size: 15px;
-                            }
-                            .nav ul li {
-                                padding: 0px 10px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1025px) {
-                            .header-logo img {
-                                max-width: 130px;
-                            }
-                            .nav ul li a {
-                                font-size: 20px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1401px) {
-                            .header-logo img {
-                                max-width: 149.33px;
-                            }
-                            .nav ul li a {
-                                font-size: 30px;
-                            }
-                            .nav ul li {
-                                padding: 0px 20px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1800px) {
-                            .header {
-                                min-height: 192px;
-                            }
-                            .header-logo img {
-                                min-width: 186px;
-                                min-height: 123px;
-                                padding: 22px 0px 47px 86px;
-                            }
-                            .nav ul {
-                                padding-left: 131px;
-                                line-height: 35px;
-                            }
-                            .nav ul li {
-                                padding: 0px 35px;
-                                text-align: center;
-                            }
-                            .nav ul li a {
-                                font-size: 30px;
-                            }
-                            .nav__element {
-                                max-width: 182.14px;
-                            }
-                            .nav__link {
-                                max-width: 148.2px;
-                            }
-                            .nav__element__link {
-                                max-width: 129.93px;
-                            }
-                            .nav__element__link {
-                                max-width: 176.62px;
-                            }
-                        }
-                        /*form section*/
-                        
-                        .form-heading h1 {
-                            text-align: center;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 900;
-                        }
-                        
-                        .form-heading p {
-                            font-family: 'Acumin Pro', sans-serif;
-                            text-align: center;
-                            font-weight: 400;
-                        }
-                        
-                        .left__form-box {
-                            background: #FFFFFF;
-                            box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
-                            border-radius: 17px;
-                        }
-                        
-                        .right__form-box {
-                            background: #FFFFFF;
-                            box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
-                            border-radius: 17px;
-                        }
-                        
-                        .left__form-box p {
-                            text-align: center;
-                            font-family: 'Acumin Pro', sans-serif;
-                            padding-top: 20px;
-                        }
-                        
-                        .left__form-box img {
-                            position: absolute;
-                        }
-                        
-                        .left__form-box--name img {
-                            width: 16px;
-                            height: 18px;
-                        }
-                        
-                        .left__form-box--email img {
-                            width: 20px;
-                            height: 16px;
-                        }
-                        
-                        .left__form-box--chat img {
-                            width: 18px;
-                            height: 18px;
-                        }
-                        
-                        .left__form-box input {
-                            border: 1px solid #7E95A6;
-                            border-radius: 8px;
-                            color: #36404E;
-                            font-family: 'Acumin Pro', sans-serif;
-                        }
-                        
-                        .right__form-box--call img {
-                            position: absolute;
-                            width: 19.89px;
-                            height: 19.93px;
-                        }
-                        
-                        .right__form-box--call h4 {
-                            font-family: 'Acumin Pro', sans-serif;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 176%;
-                        }
-                        
-                        .call {
-                            color: #4c8bf5;
-                            font-weight: normal;
-                        }
-                        
-                        .right__form-box--email img {
-                            position: absolute;
-                            width: 20px;
-                            height: 16px;
-                        }
-                        
-                        .right__form-box--email h4 {
-                            font-family: 'Acumin Pro', sans-serif;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 176%;
-                        }
-                        
-                        .email {
-                            font-weight: normal;
-                            color: #36404E;
-                        }
-                        
-                        .right__form-box--location img {
-                            position: absolute;
-                            width: 18px;
-                            height: 22px;
-                        }
-                        
-                        .right__form-box--location h4 {
-                            font-family: 'Acumin Pro', sans-serif;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 176%;
-                        }
-                        
-                        .location {
-                            color: #36404E;
-                            font-weight: normal;
-                        }
-                        
-                        @media screen and (min-width: 320px) {
-                            .form-heading h1 {
-                                font-size: 20px;
-                            }
-                            .form-heading p {
-                                font-size: 10px;
-                            }
-                            .left__form-box {
-                                margin: 20px 20px;
-                            }
-                            .left__form-box--name img {
-                                padding: 6px 0px 0px 15px;
-                            }
-                            .left__form-box--email img {
-                                padding: 6px 0px 0px 15px;
-                            }
-                            .left__form-box--chat img {
-                                padding: 15px 0px 0px 15px;
-                            }
-                            .left__form-box input {
-                                padding-left: 45px;
-                            }
-                            .left__form-box--name input {
-                                width: 90%;
-                                float: inherit;
-                                height: 30px;
-                            }
-                            .left__form-box--email input {
-                                width: 90%;
-                                float: inherit;
-                                height: 30px;
-                            }
-                            .left__form-box--chat input {
-                                width: 90%;
-                                float: inherit;
-                                height: 45px;
-                            }
-                            .left__form-box--name {
-                                padding: 20px 40px 20px 20px;
-                            }
-                            .left__form-box--email {
-                                padding: 20px 40px 20px 20px;
-                            }
-                            .left__form-box--chat {
-                                padding: 20px 40px 20px 20px;
-                            }
-                            .left__form-box--calculation {
-                                padding: 10px 30px;
-                            }
-                            .left__form-box--calculation label {
-                                font-size: 13px;
-                                color: #36404E;
-                                font-family: 'Acumin Pro', sans-serif;
-                                margin-right: 23px;
-                                margin-bottom: 10px;
-                            }
-                            .left__form-box--calculation input {
-                                width: 30px;
-                                height: 30px;
-                            }
-                            .left__form-box--btn .submit-btn {
-                                min-width: 80px;
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                height: 30px;
-                                color: #FFFFFF;
-                                background: rgba(32, 185, 185, 1);
-                                ;
-                            }
-                            .left__form-box--btn {
-                                padding: 30px 120px;
-                            }
-                            .right__form-box {
-                                height: 400px;
-                                margin: 0px 10px 30px 10px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 481px) {
-                            .form-heading h1 {
-                                font-size: 30px;
-                            }
-                            .form-heading p {
-                                font-size: 15px;
-                            }
-                            .left__form-box {
-                                height: 480px;
-                                margin: 20px 60px;
-                            }
-                            .left__form-box--name img {
-                                padding: 5px 0px 5px 10px;
-                            }
-                            .left__form-box--email img {
-                                padding: 5px 0px 5px 10px;
-                            }
-                            .left__form-box--chat img {
-                                padding: 22px 0px 0px 10px;
-                            }
-                            .left__form-box--name input {
-                                height: 25px;
-                                min-width: 250px;
-                            }
-                            .left__form-box--email input {
-                                height: 25px;
-                                min-width: 250px;
-                            }
-                            .left__form-box--chat input {
-                                height: 60px;
-                                min-width: 250px;
-                            }
-                            .left__form-box--name {
-                                padding: 15px 30px;
-                            }
-                            .left__form-box--email {
-                                padding: 15px 30px;
-                            }
-                            .left__form-box--chat {
-                                padding: 15px 30px;
-                            }
-                            .left__form-box--btn .submit-btn {
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                height: 30px;
-                            }
-                            .left__form-box--btn {
-                                padding: 30px 150px;
-                            }
-                            .right__form-box {
-                                height: 480px;
-                                margin: 20px 60px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 769px) {
-                            .form-heading h1 {
-                                font-size: 40px;
-                            }
-                            .form-container {
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: center;
-                            }
-                            .left__form-box {
-                                width: 400px;
-                                height: 500px;
-                                margin: 40px 20px;
-                            }
-                            .left__form-box p {
-                                padding-top: 30px;
-                            }
-                            .left__form-box--chat img {
-                                padding: 33px 0px 0px 10px;
-                            }
-                            .left__form-box--name input {
-                                width: 295px;
-                            }
-                            .left__form-box--email input {
-                                width: 295px;
-                            }
-                            .left__form-box--chat input {
-                                height: 80px;
-                                width: 295px;
-                            }
-                            .left__form-box--calculation input {
-                                width: 110px;
-                                height: 40px;
-                            }
-                            .left__form-box--btn .submit-btn {
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                height: 30px;
-                                width: 120px;
-                            }
-                            .left__form-box--btn {
-                                padding: 30px 230px;
-                            }
-                            .right__form-box {
-                                width: 300px;
-                                height: 500px;
-                                margin: 40px 30px 40px 10px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1500px) {
-                            .left__form-box {
-                                width: 500px;
-                                height: 550px;
-                                margin: 40px 20px;
-                            }
-                            .left__form-box--name img {
-                                padding: 7px 0px 7px 10px;
-                            }
-                            .left__form-box--email img {
-                                padding: 7px 0px 7px 10px;
-                            }
-                            .left__form-box--chat img {
-                                padding: 44px 0px 0px 10px;
-                            }
-                            .left__form-box--name input {
-                                width: 380px;
-                                height: 30px;
-                            }
-                            .left__form-box--email input {
-                                width: 380px;
-                                height: 30px;
-                            }
-                            .left__form-box--chat input {
-                                height: 100px;
-                                width: 380px;
-                            }
-                            .left__form-box--calculation input {
-                                width: 190px;
-                            }
-                            .left__form-box--btn {
-                                padding: 30px 260px;
-                            }
-                            .right__form-box {
-                                height: 550px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1900px) {
-                            .form-heading h1 {
-                                padding: 100px 1146px 0px 403px;
-                                font-size: 60px;
-                                width: 371px;
-                                line-height: 67px;
-                            }
-                            .form-heading p {
-                                text-align: inherit;
-                                padding-left: 403px;
-                                padding-right: 862px;
-                                width: 654px;
-                                font-size: 25px;
-                                line-height: 33.13px;
-                            }
-                            .form-container {
-                                margin-bottom: 102px;
-                                padding-top: 10px;
-                                padding-left: 10px;
-                            }
-                            .left__form-box {
-                                width: 635px;
-                                height: 758px;
-                            }
-                            .left__form-box--name img {
-                                padding: 6px 0px 0px 15px;
-                            }
-                            .left__form-box--email img {
-                                padding: 6px 0px 0px 15px;
-                            }
-                            .left__form-box--chat img {
-                                padding: 15px 0px 0px 15px;
-                            }
-                            .left__form-box input {
-                                padding-left: 45px;
-                                border-radius: 8px;
-                                color: #36404E;
-                            }
-                            .left__form-box--name input {
-                                width: 70%;
-                                height: 30px;
-                            }
-                            .left__form-box--email input {
-                                width: 90%;
-                                height: 30px;
-                            }
-                            .left__form-box--chat input {
-                                width: 90%;
-                                height: 45px;
-                            }
-                            .left__form-box--name {
-                                padding: 20px 30px;
-                                font-family: 'Acumin Pro', sans-serif;
-                            }
-                            .left__form-box--email {
-                                padding: 10px 30px;
-                                font-family: 'Acumin Pro', sans-serif;
-                            }
-                            .left__form-box--chat {
-                                padding: 10px 30px;
-                                font-family: 'Acumin Pro', sans-serif;
-                            }
-                            .left__form-box--chat .message {
-                                margin-top: 0px;
-                                font-family: 'Acumin Pro', sans-serif;
-                            }
-                            .left__form-box--calculation {
-                                padding: 10px 30px;
-                            }
-                            .left__form-box--calculation label {
-                                color: #36404E;
-                                font-family: 'Acumin Pro', sans-serif;
-                            }
-                            .left__form-box--calculation input {
-                                width: 33%;
-                                height: 30px;
-                            }
-                            .left__form-box--btn .submit-btn {
-                                padding-left: 10px;
-                                padding-right: 10px;
-                                height: 30px;
-                                color: #FFFFFF;
-                                background: rgba(32, 185, 185, 1);
-                                ;
-                            }
-                            .left__form-box--btn {
-                                padding: 30px 120px;
-                            }
-                            .right__form-box {
-                                width: 445px;
-                                height: 758px;
-                            }
-                            .right__form-box--call img {
-                                padding: 102px 354.11px 0px 71px;
-                            }
-                            .right__form-box--call h4 {
-                                width: 214px;
-                                height: 61px;
-                                padding: 94px 0px 0px 116px;
-                            }
-                            .right__form-box--email img {
-                                padding: 65px 354px 0px 71px;
-                            }
-                            .right__form-box--email h4 {
-                                width: 114px;
-                                height: 61px;
-                                padding: 60px 0px 0px 116px;
-                            }
-                            .right__form-box--location img {
-                                padding: 55px 352px 0px 75px;
-                            }
-                            .right__form-box--location h4 {
-                                width: 200px;
-                                height: 97px;
-                                padding: 50px 0px 0px 116px;
-                            }
-                        }
-                        /*footer section*/
-                        
-                        .footer-1 {
-                            background-color: #1E1D45;
-                        }
-                        
-                        .footer-content p {
-                            color: #FFFFFF;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight: normal;
-                            font-size: 13px;
-                            transition: 0.7s;
-                        }
-                        
-                        .footer-content a {
-                            color: #FFFFFF;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight: normal;
-                            text-decoration: none;
-                            font-size: 13px;
-                        }
-                        
-                        .footer__link p:hover {
-                            opacity: 0.5;
-                        }
-                        
-                        .footer__links p:hover {
-                            opacity: 0.5;
-                        }
-                        
-                        .footer-icon :hover {
-                            opacity: 0.2;
-                        }
-                        
-                        .footer-2 {
-                            background-color: #1E1D45;
-                            border: 1px solid rgba(255, 255, 255, 0.1);
-                        }
-                        
-                        .footer-2 p {
-                            text-align: center;
-                            color: #9291B6;
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 14px;
-                        }
-                        
-                        @media screen and (min-width: 250px) {
-                            .footer-logo {
-                                min-width: 70px;
-                                padding: 20px 0px 20px 70px;
-                            }
-                            .footer-1 {
-                                padding-bottom: 20px;
-                                display: block;
-                            }
-                            .footer-content {
-                                padding-left: 15px;
-                                padding-right: 15px;
-                            }
-                            .footer__element {
-                                width: 220.50px;
-                                text-align: justify;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 320px) {
-                            .footer-logo {
-                                min-width: 70px;
-                                padding: 20px 0px 20px 100px;
-                            }
-                            .footer-content {
-                                padding-left: 30px;
-                                padding-right: 30px;
-                            }
-                            .footer__element {
-                                width: 280.50px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 482px) {
-                            .footer-logo {
-                                padding: 20px 170px 20px 170px;
-                            }
-                            .footer-content {
-                                padding-left: 70px;
-                                padding-right: 70px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 769px) {
-                            .footer-1 {
-                                align-items: center;
-                                justify-content: inherit;
-                                display: flex;
-                            }
-                            .footer-logo {
-                                min-width: 90px;
-                                padding: 20px 30px 20px 20px;
-                            }
-                            .footer-content {
-                                display: inline-flex;
-                                padding: 20px 0px;
-                            }
-                            .footer__element {
-                                width: 280.50px;
-                                padding-left: 30px;
-                                padding-right: 0px;
-                            }
-                            .footer__link {
-                                padding-left: 30px;
-                            }
-                            .footer__links {
-                                padding-left: 20px;
-                            }
-                            .footer__social_link {
-                                padding-left: 10px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1025px) {
-                            .footer-logo img {
-                                min-width: 110px;
-                                padding: 20px 30px 20px 30px;
-                            }
-                            .footer-content {
-                                padding: 30px 0px;
-                            }
-                            .footer__element {
-                                padding-left: 20px;
-                            }
-                            .footer__link {
-                                padding-left: 20px;
-                            }
-                            .footer__links {
-                                padding-left: 40px;
-                            }
-                            .footer__social_link {
-                                padding-left: 40px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1200px) {
-                            .footer__element {
-                                padding-left: 100px;
-                            }
-                            .footer__link {
-                                padding-left: 50px;
-                            }
-                            .footer__links {
-                                padding-left: 50px;
-                            }
-                            .footer__social_link {
-                                padding-left: 50px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1400px) {
-                            .footer-logo img {
-                                padding: 80px 0px 84px 200px;
-                            }
-                            .footer__element {
-                                padding-left: 120px;
-                            }
-                            .footer__link {
-                                padding-left: 80px;
-                            }
-                            .footer__links {
-                                padding-left: 80px;
-                            }
-                            .footer__social_link {
-                                padding-left: 80px;
-                            }
-                            .footer__social_link img {
-                                padding-top: 20px;
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1820px) {
-                            .footer-1 {
-                                min-height: 247px;
-                            }
-                            .footer-logo img {
-                                min-width: 129px;
-                                min-height: 83px;
-                                padding: 80px 0px 84px 272px;
-                            }
-                            .footer__element p {
-                                width: 357px;
-                                padding: 66px 0px 54px 30px;
-                                line-height: 17.38px;
-                                text-align: initial;
-                            }
-                            .footer__link p {
-                                width: 103px;
-                                line-height: 25.76px;
-                                padding: 66px 0px 54px 140px;
-                            }
-                            .footer__links p {
-                                width: 103px;
-                                line-height: 28.56px;
-                                padding: 66px 0px 54px 30px;
-                            }
-                            .footer__social_link p {
-                                width: 105px;
-                                line-height: 18.2px;
-                                padding: 70px 0px 0px 50px;
-                            }
-                            .footer__social_link .icon {
-                                margin-left: 35px;
-                            }
-                            .footer__social_link img {
-                                padding-top: 20px;
-                            }
-                            .footer__social_link a {
-                                padding-right: 10px;
-                            }
-                        }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@250;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@font-face {
+    font-family: 'Acumin Pro', sans-serif;
+    src: url('../font/Acumin-RPro.woff') format('woff');
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*header section*/
+
+.header {
+    display: flex;
+    background-color: #1B3DA2;
+    align-items: center;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+li.nav__element {
+    position: relative;
+}
+
+li.nav__link {
+    position: relative;
+}
+
+li.nav__element__link {
+    position: relative;
+}
+
+li.nav__element:before {
+    content: '';
+    display: block;
+    width: 1px;
+    position: absolute;
+    background: #7798F9;
+}
+
+li.nav__link:before {
+    content: '';
+    display: block;
+    width: 1.3px;
+    position: absolute;
+    background: #7798F9;
+}
+
+li.nav__element__link:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 1.3px;
+    position: absolute;
+    background: #7798F9;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-logo img {
+        max-width: 70px;
+        padding: 10px 0px 20px 30px;
+    }
+    .nav ul li {
+        display: none;
+    }
+    .toggle-button {
+        display: flex;
+        font-size: 30px;
+        color: #FFFFFF;
+        padding-left: 120px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header {
+        justify-content: inherit;
+    }
+    .header-logo img {
+        max-width: 100px;
+        padding: 10px 0px 20px 30px;
+    }
+    .nav ul li a {
+        font-size: 15px;
+    }
+    .nav ul li {
+        padding: 0px 15px;
+    }
+    li.nav__element:before {
+        height: 22px;
+        right: 0px;
+        top: 50%;
+        background: #7798F9;
+        margin-bottom: -80px;
+        margin-top: -10px;
+    }
+    li.nav__link:before {
+        height: 20px;
+        right: 0;
+        top: 50%;
+        background: #7798F9;
+        margin-bottom: -80px;
+        margin-top: -10px;
+    }
+    li.nav__element__link:not(:last-child)::after {
+        height: 20px;
+        right: 0px;
+        top: 50%;
+        background: #7798F9;
+        margin-bottom: -80px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header-logo img {
+        max-width: 130px;
+    }
+    .nav ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .header-logo img {
+        max-width: 149.33px;
+    }
+    .nav ul li a {
+        font-size: 30px;
+    }
+    .nav ul li {
+        padding: 0px 20px;
+    }
+    li.nav__element:before {
+        height: 30px;
+        margin-top: -15px;
+    }
+    li.nav__link:before {
+        height: 30px;
+        margin-top: -15px;
+    }
+    li.nav__element__link:not(:last-child)::after {
+        height: 30px;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .header {
+        min-height: 192px;
+    }
+    .header-logo img {
+        min-width: 186px;
+        min-height: 123px;
+        padding: 22px 0px 47px 86px;
+    }
+    .nav ul {
+        padding-left: 131px;
+        line-height: 35px;
+    }
+    .nav ul li {
+        padding: 0px 35px;
+        text-align: center;
+    }
+    .nav ul li a {
+        font-size: 30px;
+    }
+    .nav__element {
+        max-width: 182.14px;
+    }
+    .nav__link {
+        max-width: 148.2px;
+    }
+    .nav__element__link {
+        max-width: 129.93px;
+    }
+    .nav__element__link {
+        max-width: 176.62px;
+    }
+    li.nav__element:before {
+        height: 58px;
+        right: 0px;
+        top: 50%;
+        background: #7798F9;
+        margin-top: -28px;
+    }
+    li.nav__link:before {
+        height: 58px;
+        right: 0;
+        top: 50%;
+        background: #7798F9;
+        margin-top: -28px;
+    }
+    li.nav__element__link:not(:last-child)::after {
+        height: 58px;
+        right: 0;
+        top: 50%;
+        background: #7798F9;
+        margin-top: -28px;
+    }
+}
+
+
+/*form section*/
+
+.form-heading h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.form-heading p {
+    font-family: 'Acumin Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.left__form-box {
+    background: #FFFFFF;
+    box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
+    border-radius: 17px;
+}
+
+.right__form-box {
+    background: #FFFFFF;
+    box-shadow: 10px 30px 30px rgba(181, 192, 203, 0.51);
+    border-radius: 17px;
+}
+
+.left__form-box p {
+    text-align: center;
+    font-family: 'Acumin Pro', sans-serif;
+    padding-top: 20px;
+}
+
+.left__form-box img {
+    position: absolute;
+}
+
+.left__form-box--name img {
+    width: 16px;
+    height: 18px;
+}
+
+.left__form-box--email img {
+    width: 20px;
+    height: 16px;
+}
+
+.left__form-box--chat img {
+    width: 18px;
+    height: 18px;
+}
+
+.left__form-box input {
+    border: 1px solid #7E95A6;
+    border-radius: 8px;
+    color: #36404E;
+    font-family: 'Acumin Pro', sans-serif;
+}
+
+.right__form-box--call img {
+    position: absolute;
+    width: 19.89px;
+    height: 19.93px;
+}
+
+.right__form-box--call h4 {
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 176%;
+}
+
+.call {
+    color: #4c8bf5;
+    font-weight: normal;
+}
+
+.right__form-box--email img {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+}
+
+.right__form-box--email h4 {
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 176%;
+}
+
+.email {
+    font-weight: normal;
+    color: #36404E;
+}
+
+.right__form-box--location img {
+    position: absolute;
+    width: 18px;
+    height: 22px;
+}
+
+.right__form-box--location h4 {
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 176%;
+}
+
+.location {
+    color: #36404E;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 320px) {
+    .form-heading h1 {
+        font-size: 20px;
+    }
+    .form-heading p {
+        font-size: 10px;
+    }
+    .left__form-box {
+        margin: 20px 20px;
+    }
+    .left__form-box--name img {
+        padding: 6px 0px 0px 15px;
+    }
+    .left__form-box--email img {
+        padding: 6px 0px 0px 15px;
+    }
+    .left__form-box--chat img {
+        padding: 15px 0px 0px 15px;
+    }
+    .left__form-box input {
+        padding-left: 45px;
+    }
+    .left__form-box--name input {
+        width: 90%;
+        float: inherit;
+        height: 30px;
+    }
+    .left__form-box--email input {
+        width: 90%;
+        float: inherit;
+        height: 30px;
+    }
+    .left__form-box--chat input {
+        width: 90%;
+        float: inherit;
+        height: 45px;
+    }
+    .left__form-box--name {
+        padding: 20px 40px 20px 20px;
+    }
+    .left__form-box--email {
+        padding: 20px 40px 20px 20px;
+    }
+    .left__form-box--chat {
+        padding: 20px 40px 20px 20px;
+    }
+    .left__form-box--calculation {
+        padding: 10px 30px;
+    }
+    .left__form-box--calculation label {
+        font-size: 13px;
+        color: #36404E;
+        font-family: 'Acumin Pro', sans-serif;
+        margin-right: 23px;
+        margin-bottom: 10px;
+    }
+    .left__form-box--calculation input {
+        width: 30px;
+        height: 30px;
+    }
+    .left__form-box--btn .submit-btn {
+        min-width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        color: #FFFFFF;
+        background: rgba(32, 185, 185, 1);
+        ;
+    }
+    .left__form-box--btn {
+        padding: 30px 120px;
+    }
+    .right__form-box {
+        height: 400px;
+        margin: 0px 10px 30px 10px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .form-heading h1 {
+        font-size: 30px;
+    }
+    .form-heading p {
+        font-size: 15px;
+    }
+    .left__form-box {
+        height: 480px;
+        margin: 20px 60px;
+    }
+    .left__form-box--name img {
+        padding: 5px 0px 5px 10px;
+    }
+    .left__form-box--email img {
+        padding: 5px 0px 5px 10px;
+    }
+    .left__form-box--chat img {
+        padding: 22px 0px 0px 10px;
+    }
+    .left__form-box--name input {
+        height: 25px;
+        min-width: 250px;
+    }
+    .left__form-box--email input {
+        height: 25px;
+        min-width: 250px;
+    }
+    .left__form-box--chat input {
+        height: 60px;
+        min-width: 250px;
+    }
+    .left__form-box--name {
+        padding: 15px 30px;
+    }
+    .left__form-box--email {
+        padding: 15px 30px;
+    }
+    .left__form-box--chat {
+        padding: 15px 30px;
+    }
+    .left__form-box--btn .submit-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+    }
+    .left__form-box--btn {
+        padding: 30px 150px;
+    }
+    .right__form-box {
+        height: 480px;
+        margin: 20px 60px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .form-heading h1 {
+        font-size: 40px;
+    }
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left__form-box {
+        width: 400px;
+        height: 500px;
+        margin: 40px 20px;
+    }
+    .left__form-box p {
+        padding-top: 30px;
+    }
+    .left__form-box--chat img {
+        padding: 33px 0px 0px 10px;
+    }
+    .left__form-box--name input {
+        width: 295px;
+    }
+    .left__form-box--email input {
+        width: 295px;
+    }
+    .left__form-box--chat input {
+        height: 80px;
+        width: 295px;
+    }
+    .left__form-box--calculation input {
+        width: 110px;
+        height: 40px;
+    }
+    .left__form-box--btn .submit-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        width: 120px;
+    }
+    .left__form-box--btn {
+        padding: 30px 230px;
+    }
+    .right__form-box {
+        width: 300px;
+        height: 500px;
+        margin: 40px 30px 40px 10px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .left__form-box {
+        width: 500px;
+        height: 550px;
+        margin: 40px 20px;
+    }
+    .left__form-box--name img {
+        padding: 7px 0px 7px 10px;
+    }
+    .left__form-box--email img {
+        padding: 7px 0px 7px 10px;
+    }
+    .left__form-box--chat img {
+        padding: 44px 0px 0px 10px;
+    }
+    .left__form-box--name input {
+        width: 380px;
+        height: 30px;
+    }
+    .left__form-box--email input {
+        width: 380px;
+        height: 30px;
+    }
+    .left__form-box--chat input {
+        height: 100px;
+        width: 380px;
+    }
+    .left__form-box--calculation input {
+        width: 190px;
+    }
+    .left__form-box--btn {
+        padding: 30px 260px;
+    }
+    .right__form-box {
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .form-heading h1 {
+        padding: 100px 1146px 0px 403px;
+        font-size: 60px;
+        width: 371px;
+        line-height: 67px;
+    }
+    .form-heading p {
+        text-align: inherit;
+        padding-left: 403px;
+        padding-right: 862px;
+        width: 654px;
+        font-size: 25px;
+        line-height: 33.13px;
+    }
+    .form-container {
+        margin-bottom: 102px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .left__form-box {
+        width: 635px;
+        height: 758px;
+    }
+    .left__form-box--name img {
+        padding: 6px 0px 0px 15px;
+    }
+    .left__form-box--email img {
+        padding: 6px 0px 0px 15px;
+    }
+    .left__form-box--chat img {
+        padding: 15px 0px 0px 15px;
+    }
+    .left__form-box input {
+        padding-left: 45px;
+        border-radius: 8px;
+        color: #36404E;
+    }
+    .left__form-box--name input {
+        width: 70%;
+        height: 30px;
+    }
+    .left__form-box--email input {
+        width: 90%;
+        height: 30px;
+    }
+    .left__form-box--chat input {
+        width: 90%;
+        height: 45px;
+    }
+    .left__form-box--name {
+        padding: 20px 30px;
+        font-family: 'Acumin Pro', sans-serif;
+    }
+    .left__form-box--email {
+        padding: 10px 30px;
+        font-family: 'Acumin Pro', sans-serif;
+    }
+    .left__form-box--chat {
+        padding: 10px 30px;
+        font-family: 'Acumin Pro', sans-serif;
+    }
+    .left__form-box--chat .message {
+        margin-top: 0px;
+        font-family: 'Acumin Pro', sans-serif;
+    }
+    .left__form-box--calculation {
+        padding: 10px 30px;
+    }
+    .left__form-box--calculation label {
+        color: #36404E;
+        font-family: 'Acumin Pro', sans-serif;
+    }
+    .left__form-box--calculation input {
+        width: 33%;
+        height: 30px;
+    }
+    .left__form-box--btn .submit-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        color: #FFFFFF;
+        background: rgba(32, 185, 185, 1);
+        ;
+    }
+    .left__form-box--btn {
+        padding: 30px 120px;
+    }
+    .right__form-box {
+        width: 445px;
+        height: 758px;
+    }
+    .right__form-box--call img {
+        padding: 102px 354.11px 0px 71px;
+    }
+    .right__form-box--call h4 {
+        width: 214px;
+        height: 61px;
+        padding: 94px 0px 0px 116px;
+    }
+    .right__form-box--email img {
+        padding: 65px 354px 0px 71px;
+    }
+    .right__form-box--email h4 {
+        width: 114px;
+        height: 61px;
+        padding: 60px 0px 0px 116px;
+    }
+    .right__form-box--location img {
+        padding: 55px 352px 0px 75px;
+    }
+    .right__form-box--location h4 {
+        width: 200px;
+        height: 97px;
+        padding: 50px 0px 0px 116px;
+    }
+}
+
+
+/*footer section*/
+
+.footer-1 {
+    background-color: #1E1D45;
+}
+
+.footer-content p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.7s;
+}
+
+.footer-content a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer__link ul li {
+    list-style: none;
+}
+
+.footer__links ul li {
+    list-style: none;
+}
+
+.footer__link ul li:hover {
+    opacity: 0.5;
+}
+
+.footer__links ul li:hover {
+    opacity: 0.5;
+}
+
+.footer-icon :hover {
+    opacity: 0.2;
+}
+
+.footer-2 {
+    background-color: #1E1D45;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-2 p {
+    text-align: center;
+    color: #9291B6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 250px) {
+    .footer-logo {
+        min-width: 70px;
+        padding: 20px 0px 20px 70px;
+    }
+    .footer-1 {
+        padding-bottom: 20px;
+        display: block;
+    }
+    .footer-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer__element {
+        width: 220.50px;
+        text-align: justify;
+    }
+    .footer__link li {
+        margin-left: -40px;
+    }
+    .footer__links li {
+        margin-left: -40px;
+    }
+    .footer__social_link a {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .footer-logo {
+        min-width: 70px;
+        padding: 20px 0px 20px 100px;
+    }
+    .footer-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer__element {
+        width: 280.50px;
+    }
+    .footer__link li {
+        margin-left: -40px;
+    }
+    .footer__links li {
+        margin-left: -40px;
+    }
+}
+
+@media screen and (min-width: 482px) {
+    .footer-logo {
+        padding: 20px 170px 20px 170px;
+    }
+    .footer-content {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer-1 {
+        align-items: center;
+        justify-content: inherit;
+        display: flex;
+    }
+    .footer-logo {
+        min-width: 90px;
+        padding: 20px 30px 20px 20px;
+    }
+    .footer-content {
+        display: inline-flex;
+        padding: 20px 0px;
+    }
+    .footer__element {
+        width: 280.50px;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+    .footer__link {
+        padding-left: 30px;
+    }
+    .footer__links {
+        padding-left: 20px;
+    }
+    .footer__social_link {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .footer-logo img {
+        min-width: 110px;
+        padding: 20px 30px 20px 30px;
+    }
+    .footer-content {
+        padding: 30px 0px;
+    }
+    .footer__element {
+        padding-left: 20px;
+    }
+    .footer__link {
+        padding-left: 20px;
+    }
+    .footer__links {
+        padding-left: 40px;
+    }
+    .footer__social_link {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__element {
+        padding-left: 100px;
+    }
+    .footer__link {
+        padding-left: 50px;
+    }
+    .footer__links {
+        padding-left: 50px;
+    }
+    .footer__social_link {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .footer-logo img {
+        padding: 80px 0px 84px 200px;
+    }
+    .footer__element {
+        padding-left: 120px;
+    }
+    .footer__link {
+        padding-left: 80px;
+    }
+    .footer__links {
+        padding-left: 80px;
+    }
+    .footer__social_link {
+        padding-left: 80px;
+    }
+    .footer__social_link img {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .footer-1 {
+        min-height: 247px;
+    }
+    .footer-logo img {
+        min-width: 129px;
+        min-height: 83px;
+        padding: 80px 0px 84px 272px;
+    }
+    .footer__element p {
+        width: 357px;
+        padding: 66px 0px 54px 30px;
+        line-height: 17.38px;
+        text-align: initial;
+    }
+    .footer__link li {
+        width: 50px;
+        line-height: 25.76px;
+        padding: 66px 0px 54px 140px;
+    }
+    .footer__links li {
+        width: 103px;
+        line-height: 28.56px;
+        padding: 66px 0px 54px 30px;
+    }
+    .footer__social_link p {
+        width: 105px;
+        line-height: 18.2px;
+        padding: 70px 0px 0px 30px;
+    }
+    .footer__social_link .icon {
+        margin-left: 35px;
+    }
+    .footer__social_link img {
+        padding-top: 20px;
+    }
+    .footer__social_link a {
+        padding-right: 10px;
+    }
+}

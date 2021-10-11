@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/contactus.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/aboutus.js"></script>
     <title>Contact Us</title>
 </head>
 
@@ -16,18 +19,23 @@
                 <img src="image/Logo.png" alt="Logo">
             </a>
         </div>
-        <div class="toggle-button"><button>toggle-menu</button></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
         <div class="nav">
             <ul>
-                <li class="nav__element"><a href="#">Revenue Acceleration</a></li>
-                <li class="nav__element"><a href="#">Auto- Adjudication</a>
+                <li class="nav__element" id="links"><a href="#">Revenue Acceleration</a></li>
+                <li class="nav__element" id="links"><a href="#">Auto- Adjudication</a>
                 </li>
-                <li class="nav__link"><a href="#">Entity Resolution</a></li>
-                <li class="nav__element__link"><a href="#">Payment Integrity</a></li>
-                <li class="nav__element__link"><a href="#">HealthSigma Academy</a></li>
+                <li class="nav__link" id="links"><a href="#">Entity Resolution</a></li>
+                <li class="nav__element__link" id="links"><a href="#">Payment Integrity</a></li>
+                <li class="nav__element__link" id="links"><a href="#">HealthSigma Academy</a></li>
             </ul>
         </div>
     </header>
+
+
 
     <!--form section-->
     <div class="form-heading">
@@ -93,10 +101,14 @@
                     As hospital revenues increase, more can be spent on patient care and health outcomes.</p>
             </div>
             <div class="footer__link">
-                <p><a href="#">Blog <br>Calculator</a></p>
+                <ul>
+                    <li><a href="#">Blog Calculator</a></li>
+                </ul>
             </div>
             <div class="footer__links">
-                <p><a href="#">Term of service Privacy Policy</a></p>
+                <ul>
+                    <li><a href="#">Term of service Privacy Policy</a></li>
+                </ul>
             </div>
             <div class="footer__social_link">
                 <p>Socialise with us</p>
