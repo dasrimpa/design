@@ -111,7 +111,7 @@
             padding: 10px 0px 20px 30px;
         }
         .nav ul li a {
-            font-size: 15px;
+            font-size: 12px;
         }
         .nav ul li {
             padding: 0px 15px;
@@ -147,7 +147,7 @@
             max-width: 130px;
         }
         .nav ul li a {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
     
@@ -156,7 +156,7 @@
             max-width: 149.33px;
         }
         .nav ul li a {
-            font-size: 30px;
+            font-size: 20px;
         }
         .nav ul li {
             padding: 0px 20px;
@@ -368,11 +368,9 @@
     @media screen and (max-width: 768px) {
         .card-container {
             width: 100%;
-            padding: 0px 15px 0px 15px;
+            padding: 0px 10px 0px 10px;
         }
         .card-item {
-            min-width: 250px;
-            min-width: 150px;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -425,7 +423,7 @@
     }
     /*footer section*/
     
-    .footer-1 {
+    .footer__top {
         background-color: #1E1D45;
     }
     
@@ -453,11 +451,19 @@
         list-style: none;
     }
     
-    .footer__link ul li:hover {
+    .footer__link--blog:hover {
         opacity: 0.5;
     }
     
-    .footer__links ul li:hover {
+    .footer__link .footer__link--calculator:hover {
+        opacity: 0.5;
+    }
+    
+    .footer__links .footer__links--service:hover {
+        opacity: 0.5;
+    }
+    
+    .footer__links .footer__links--policy:hover {
         opacity: 0.5;
     }
     
@@ -465,12 +471,12 @@
         opacity: 0.2;
     }
     
-    .footer-2 {
+    .footer__bottom {
         background-color: #1E1D45;
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
-    .footer-2 p {
+    .footer__bottom p {
         text-align: center;
         color: #9291B6;
         font-family: 'Roboto', sans-serif;
@@ -482,8 +488,8 @@
             min-width: 70px;
             padding: 20px 0px 20px 70px;
         }
-        .footer-1 {
-            padding-bottom: 20px;
+        .footer__top {
+            padding-bottom: 10px;
             display: block;
         }
         .footer-content {
@@ -502,6 +508,18 @@
         }
         .footer__social_link a {
             padding-left: 10px;
+        }
+        .footer__link--blog {
+            line-height: 25.76px;
+        }
+        .footer__link--calculator {
+            line-height: 25.76px;
+        }
+        .footer__links--policy {
+            line-height: 28.56px;
+        }
+        .footer__links--service {
+            line-height: 28.56px;
         }
     }
     
@@ -536,7 +554,7 @@
     }
     
     @media screen and (min-width: 769px) {
-        .footer-1 {
+        .footer__top {
             align-items: center;
             justify-content: inherit;
             display: flex;
@@ -562,6 +580,7 @@
         }
         .footer__social_link {
             padding-left: 10px;
+            padding-top: 10px;
         }
     }
     
@@ -624,34 +643,45 @@
     }
     
     @media screen and (min-width: 1820px) {
-        .footer-1 {
+        .footer__top {
             min-height: 247px;
+            padding-top: 66px;
         }
         .footer-logo img {
             min-width: 129px;
             min-height: 83px;
-            padding: 80px 0px 84px 272px;
+            padding: 0px 0px 84px 272px;
         }
         .footer__element p {
             width: 357px;
-            padding: 66px 0px 54px 30px;
+            padding: 0px 0px 54px 30px;
             line-height: 17.38px;
             text-align: initial;
         }
-        .footer__link li {
+        .footer__link--blog {
             width: 50px;
             line-height: 25.76px;
-            padding: 66px 0px 54px 140px;
+            padding: 0px 0px 0px 140px;
         }
-        .footer__links li {
+        .footer__link--calculator {
+            width: 50px;
+            line-height: 25.76px;
+            padding: 0px 0px 0px 140px;
+        }
+        .footer__links--policy {
             width: 103px;
             line-height: 28.56px;
-            padding: 66px 0px 54px 30px;
+            padding: 0px 0px 0px 30px;
+        }
+        .footer__links--service {
+            width: 103px;
+            line-height: 28.56px;
+            padding: 0px 0px 0px 30px;
         }
         .footer__social_link p {
             width: 105px;
             line-height: 18.2px;
-            padding: 70px 0px 0px 30px;
+            padding: 0px 0px 0px 30px;
         }
         .footer__social_link .icon {
             margin-left: 35px;

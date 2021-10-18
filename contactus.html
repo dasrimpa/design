@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/contactus.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/aboutus.js"></script>
     <title>Contact Us</title>
 </head>
@@ -19,18 +20,18 @@
                 <img src="image/Logo.png" alt="Logo">
             </a>
         </div>
-        <a href="javascript:void(0);" class="toggle-button" onclick="myFunction()">
+        <a href="#" class="toggle-button" id="nav_toggle">
             <i class="fa fa-bars"></i>
         </a>
 
         <div class="nav">
             <ul>
-                <li class="nav__element" id="links"><a href="#">Revenue Acceleration</a></li>
-                <li class="nav__element" id="links"><a href="#">Auto- Adjudication</a>
+                <li class="nav__element"><a href="#">Revenue Acceleration</a></li>
+                <li class="nav__element"><a href="#">Auto- Adjudication</a>
                 </li>
-                <li class="nav__link" id="links"><a href="#">Entity Resolution</a></li>
-                <li class="nav__element__link" id="links"><a href="#">Payment Integrity</a></li>
-                <li class="nav__element__link" id="links"><a href="#">HealthSigma Academy</a></li>
+                <li class="nav__link"><a href="#">Entity Resolution</a></li>
+                <li class="nav__element__link"><a href="#">Payment Integrity</a></li>
+                <li class="nav__element__link"><a href="#">HealthSigma Academy</a></li>
             </ul>
         </div>
     </header>
@@ -57,7 +58,7 @@
                 </div>
                 <div class="left__form-box--chat">
                     <img src="image/chat.png">
-                    <input type="text" placeholder="Message*" class="message">
+                    <textarea placeholder="Message*" class="message"></textarea>
                 </div>
                 <div class="left__form-box--calculation">
                     <label for="calculation">What is thirteen minus 6? *</label>
@@ -73,16 +74,16 @@
         <div class="right__form-box">
             <div class="right__form-box--call">
                 <img src="image/call.png">
-                <h4>Email <span class="call">info@healthsigmainc.com</span>
+                <h4>Email <span class="right__form-box-call">info@healthsigmainc.com</span>
                 </h4>
             </div>
             <div class="right__form-box--email">
                 <img src="image/email.png">
-                <h4>Phone <br><span class="email"> 973-768-4316</span></h4>
+                <h4>Phone <br><span class="right__form-box-email"> 973-768-4316</span></h4>
             </div>
             <div class="right__form-box--location">
                 <img src="image/location.png">
-                <h4> Address <br><span class="location">
+                <h4> Address <br><span class="right__form-box-location">
                     3621 San Paula Dr, Flower Mound, TX 75022</span></h4>
             </div>
 
@@ -90,7 +91,7 @@
     </div>
 
     <!--footer section-->
-    <footer class="footer-1">
+    <footer class="footer__top">
         <div class="footer-logo">
             <a href="aboutus.html">
                 <img src="image/logo2.png" alt="Logo">
@@ -104,12 +105,15 @@
             </div>
             <div class="footer__link">
                 <ul>
-                    <li><a href="#">Blog Calculator</a></li>
+                    <li><a href="#" class="footer__link--blog">Blog </a>
+                    </li>
+                    <li><a href="#" class="footer__link--calculator">Calculator</a></li>
                 </ul>
             </div>
             <div class="footer__links">
                 <ul>
-                    <li><a href="#">Term of service Privacy Policy</a></li>
+                    <li><a href="#" class="footer__links--service">Term of service</a></li>
+                    <li><a href="#" class="footer__links--policy"> Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer__social_link">
@@ -123,7 +127,7 @@
         </div>
 
     </footer>
-    <footer class="footer-2">
+    <footer class="footer__bottom">
         <p>Copyright © 2020 HealthSigma</p>
     </footer>
 
