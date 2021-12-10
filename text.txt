@@ -1,0 +1,3 @@
+onClick={this.props.onRowAdd}
+https://stackblitz.com/edit/dhanapal-react-ex-1-lmzsn5?file=index.js
+https://codesandbox.io/s/p569m?file=/src/components/AddFlight.tsx
